@@ -12,7 +12,6 @@ const Title = ({ num, title }) => {
                 <span className="text-neon font-fira">0{num}.</span> {title}
             </h2>
             <LineSvg className="relative md:w-96 hidden md:inline-flex !ml-10" />
-            LineSVG
         </div>
     );
 };

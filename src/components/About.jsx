@@ -1,6 +1,9 @@
+import React from 'react';
+
 import Title from './Common/Title';
 import data from '../data/data.json';
-import React from 'react';
+
+import MeIMG from '../images/me.jpeg'
 
 const About = () => {
     return (
@@ -14,11 +17,11 @@ const About = () => {
 
                 <div className="relative mx-auto mt-20 border-2 rounded-full md:mt-0 md:ml-20 w-80 h-80 border-neon">
                     <img
-                        alt={data.name}
+                        alt='me'
                         className="rounded-full"
                         layout="fill"
                         objectFit="contain"
-                        src={data.image}
+                        src={MeIMG}
                     />
                 </div>
             </div>

@@ -1,4 +1,5 @@
 // import Image from 'next/image';
+import ShowwcaseImg from '../../images/logos/showwcase.svg'
 
 const ContactButtons = ({ link, name, icon, marginLeft }) => {
     return (
@@ -12,7 +13,7 @@ const ContactButtons = ({ link, name, icon, marginLeft }) => {
                 <img
                     alt={name}
                     height={25}
-                    src={`/logos/${icon}`}
+                    src={`${icon}`}
                     width={25}
                 />
                 <span className="ml-2">{name}</span>
@@ -23,12 +24,13 @@ const ContactButtons = ({ link, name, icon, marginLeft }) => {
                 rel="noreferrer"
                 target="_blank"
             >
-                <img
-                    alt={name}
+                {/* <img
+                    alt={''}
                     height={25}
-                    src={icon}
+                    src={ShowwcaseImg}
                     width={25}
                 />
+                 */}
             </a>
         </div>
     );

@@ -1,7 +1,35 @@
 import Title from './Common/Title';
 import data from '../data/data.json';
 import { motion } from 'framer-motion';
-// import Image from 'next/image';
+
+import reactIMG from "../images/logos/react.svg"
+import nextjsIMG from "../images/logos/nextjs.svg"
+import typescriptIMG from "../images/logos/typescript.svg"
+import tailwindIMG from "../images/logos/tailwind.svg"
+
+let skills = [
+    {
+        "src": reactIMG,
+        "name": "React",
+        "link": "https://reactjs.org/"
+    },
+    {
+        "src": nextjsIMG,
+        "name": "Next",
+        "link": "https://nextjs.org/"
+    },
+    {
+        "src": typescriptIMG,
+        "name": "Typescript",
+        "link": "https://www.typescriptlang.org/"
+    },
+    {
+        "src": tailwindIMG,
+        "name": "Tailwind",
+        "link": "https://tailwindcss.com/"
+    }
+]
+
 
 const Skills = () => {
     return (
@@ -9,7 +37,7 @@ const Skills = () => {
             <Title num={4} title="Skills" />
 
             <div className="flex flex-wrap items-center justify-center mt-10 space-x-6 md:space-x-10 md:items-start md:justify-start">
-                {data.skills.map((skill, i) => (
+                {skills?.map((skill, i) => (
                     <motion.a
                         className="cursor-pointer relative w-20 h-20"
                         href={skill.link}
@@ -38,3 +66,4 @@ const Skills = () => {
 };
 
 export default Skills;
+// icon-512x512

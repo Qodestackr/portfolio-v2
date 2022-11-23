@@ -2,41 +2,49 @@ import ContactButtons from './ContactButtons';
 import { LineSvg } from '../../Icons';
 // import data from '../../data/data.json';
 
+import GitHubImg from '../../images/logos/github.svg'
+import TwitterImg from '../../images/logos/twitter.svg'
+import HashnodeImg from "../../images/logos/hashnode.svg"
+import ShowwcaseImg from '../../images/logos/showwcase.svg'
+import Instagram from '../../images/logos/instagram.svg'
+import LinkedIn from '../../images/logos/linkedin.svg'
+import MailMe from "../../images/logos/mail.svg"
+
 import React from 'react';
 let links = [
     {
         name: "GitHub",
-        "icon": "../../images/logos/github.svg",
+        "icon": GitHubImg,
         "link": "https://github.com/avneesh0612"
     },
     {
         name: "Twitter",
-        "icon": "../../images/logos/twitter.svg",
+        "icon": TwitterImg,
         "link": "https://twitter.com/avneesh0612"
     },
     {
         name: "Hashnode",
-        icon: "../../images/logos/hashnode.svg",
+        icon: HashnodeImg,
         link: "https://blog.avneesh.tech"
     },
     {
         name: "Showwcase",
-        icon: "../../images/logos/showwcase.svg",
+        icon: ShowwcaseImg,
         link: "https://www.showwcase.com/avneesh"
     },
     {
         name: "Instagram",
-        icon: "../../images/logos/instagram.svg",
+        icon: Instagram,
         link: "https://instagram.com/avneesh.codes"
     },
     {
         name: "Mail me",
-        icon: "../../images/logos/mail.svg",
+        icon: MailMe,
         link: "mailto:avneeshagarwal0612@gmail.com"
     },
     {
         name: "LinkedIn",
-        icon: "../../images/logos/linkedin.svg",
+        icon: LinkedIn,
         link: "https://www.linkedin.com/in/avneesh0612"
     }
 ]

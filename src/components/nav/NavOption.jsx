@@ -16,7 +16,6 @@ const NavOption = ({ item, number }) => {
                 <span className="text-neon">{number}. </span>
                 {item.name}
             </Link>
-            {item.name}
         </p>
     );
 };
