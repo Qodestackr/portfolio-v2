@@ -1,14 +1,28 @@
 import Title from './Common/Title';
-import data from '../data/data.json'
-// import Image from 'next/image';
 
+const testimonials = [
+    {
+        "value": "Wilson is an awesome problem solver. With dedication, we have enjoyed building products that impacts developers and users from the ground up.",
+        "name": "Paul",
+        "relation": "Co-worker",
+        "pfp": "https://avatars.githubusercontent.com/u/90365542?v=4",
+        "link": "https://github.com/paulodhiambo"
+    },
+    {
+        "value": "I've worked on numerous projects with Avneesh and the flow has always been perfect. These includes building libraries, GDSC leads, and competitive programming.",
+        "name": "William",
+        "relation": "Co-builder",
+        "pfp": "https://avatars.githubusercontent.com/u/77309809?v=4",
+        "link": "https://anurag.tech"
+    }
+]
 const Testimonials = () => {
     return (
         <div id="testimonials">
             <Title num={2} title="Testimonials" />
 
             <div className="flex w-screen px-4  space-x-10 overflow-scroll hideScrollBar md:mx-auto md:-mr-0">
-                {data.testimonials.map((testimonial, i) => (
+                {testimonials?.map((testimonial, i) => (
                     <div
                         className="rotate-3 hover:rotate-0 cursor-pointer duration-100 backdrop-filter backdrop-blur-3xl shadow-2xl border-2 border-darkerBlue  bg-white/5  px-4 my-10 pb-3 md:w-[400px] min-w-[300px] rounded-lg"
                         key={i}

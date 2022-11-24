@@ -7,12 +7,14 @@ import Skills from './components/Skills';
 import Projects from './components/Projects'
 import Testimonials from "./components/Testimonials";
 import Contact from './components/Contact';
-
+import Test from './components/Test'
 
 
 function App() {
   return (
     <Layout>
+      {/* <Test _as='h1' text='Testing a polymorphic component' className='text-red-500 text-2xl bg-blue-400 font-semibold' /> */}
+
       <Intro />
       <About />
       <Testimonials />

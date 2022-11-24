@@ -10,7 +10,7 @@ const Project = ({ project }) => {
                     alt={project.name}
                     className="rounded-lg"
                     layout="fill"
-                    objectFit="contain"
+                    // objectFit="contain"
                     src={project.image}
                 />
             </div>

@@ -24,13 +24,7 @@ const ContactButtons = ({ link, name, icon, marginLeft }) => {
                 rel="noreferrer"
                 target="_blank"
             >
-                {/* <img
-                    alt={''}
-                    height={25}
-                    src={ShowwcaseImg}
-                    width={25}
-                />
-                 */}
+
             </a>
         </div>
     );

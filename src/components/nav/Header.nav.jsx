@@ -1,4 +1,3 @@
-import Logo from '../../Icons/Logo';
 import NavOption from './NavOption';
 import navOptions from './navOptions';
 import { useEffect, useState } from 'react';
@@ -39,7 +38,7 @@ const Header = () => {
                 title="Wilson"
                 to="intro"
             >
-                <Logo className="cursor-pointer" />
+                <h1 className='text-lg font-semibold'>Wilson | PORTFOLIO</h1>
             </Link>
 
 

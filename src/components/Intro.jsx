@@ -1,6 +1,5 @@
-import data from '../data/data.json';
-import { motion } from 'framer-motion';
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
 const Intro = () => {
@@ -14,15 +13,17 @@ const Intro = () => {
         >
             <p className="text-3xl text-neon font-fira">Hi, my name is</p>
             <h1 className="text-5xl font-extrabold text-text md:text-8xl">
-                {data.name}
+                Wilson Gichuhi
             </h1>
             <h2 className="text-4xl text-textDark md:text-6xl">
-                I build amazing websites!
+                I ship mobile & cloud-based <br />
+                web apps.
             </h2>
             <p className="w-4/5 md:w-3/5 text-textDark">
                 I&rsquo;m a{' '}
-                <span className="text-neon">{data.profession}. </span>
-                {data.intro}
+                <span className="text-neon">FullStack web developer. </span>
+                Focused on building products that will make people's lives better. I also create content in form
+                of blogs and threads. I love to learn new things and I am always open to learn new technologies
             </p>
             <div className="flex space-x-3">
                 <Link
@@ -42,7 +43,7 @@ const Intro = () => {
                 <Link
                     activeClass="active"
                     duration={500}
-                    href="contact"
+                    href="work"
                     offset={-100}
                     smooth={true}
                     spy={true}
