@@ -1,25 +1,15 @@
 import Title from './Common/Title';
 import { motion } from 'framer-motion';
 
-//
 import reactIMG from "../images/logos/react.svg"
-// import VuejsIMG from "../images/logos/vue.svg"
-
-import reactNativeIMG from '../images/logos/react-native.svg'
+import VuejsIMG from "../images/logos/vue.svg"
 import typescriptIMG from "../images/logos/typescript.svg"
 import tailwindIMG from "../images/logos/tailwind.svg"
 import figmaIMG from "../images/logos/figma.svg"
+import firebaseIMG from '../images/logos/firebase.svg'
 import chakraUI_IMG from '../images/logos/chakraui.svg'
 
 // nb
-import djangoIMG from '../images/logos/django.svg'
-import NestjsIMG from '../images/logos/nestjs.png'
-import graphqlIMG from '../images/logos/graphql.svg'
-import dockerIMG from '../images/logos/docker.svg'
-import gcpIMG from '../images/logos/gcp.png'
-import serverlessIMG from '../images/logos/serverless.png'
-import firebaseIMG from '../images/logos/firebase.svg'
-
 
 let frontend_skills = [
     {
@@ -28,12 +18,7 @@ let frontend_skills = [
         "link": "https://reactjs.org/"
     },
     {
-        "src": reactNativeIMG,
-        "name": "React Native",
-        "link": "https://firebase.google.com/"
-    },
-    {
-        "src": graphqlIMG,
+        "src": VuejsIMG,
         "name": "Vue",
         "link": "https://vuejs.org/"
     },
@@ -48,47 +33,52 @@ let frontend_skills = [
         "link": "https://tailwindcss.com/"
     },
     {
-        "src": chakraUI_IMG,
-        "name": "Tailwind",
+    "src": chakraUI_IMG,
+            "name": "Tailwind",
         "link": "https://chakra-ui.com/"
     },
     {
         "src": figmaIMG,
         "name": "Figma",
         "link": "https://figma.com/"
+    },
+    {
+        "src": firebaseIMG,
+        "name": "firebase",
+        "link": "https://firebase.google.com/"
     }
 ]
 
 let backend_skills = [
     {
-        "src": djangoIMG,
-        "name": "Django",
-        "link": "https://www.djangoproject.com/"
+        "src": reactIMG,
+        "name": "estjs",
+        "link": "https://reactjs.org/"
     },
     {
-        "src": NestjsIMG,
-        "name": "Nestjs",
-        "link": "https://nestjs.com"
+        "src": VuejsIMG,
+        "name": "Djago",
+        "link": "https://vuejs.org/"
     },
     {
-        "src": graphqlIMG,
+        "src": typescriptIMG,
         "name": "GraphQL",
-        "link": "https://graphql.org"
+        "link": "https://www.typescriptlang.org/"
     },
     {
-        "src": dockerIMG,
-        "name": "Docker",
-        "link": "https://www.docker.com/"
+        "src": tailwindIMG,
+        "name": "AWS",
+        "link": "https://tailwindcss.com/"
     },
     {
-        "src": gcpIMG,
-        "name": "GCP",
-        "link": "https://cloud.google.com/"
+    "src": chakraUI_IMG,
+            "name": "GCP",
+        "link": "https://chakra-ui.com/"
     },
     {
-        "src": serverlessIMG,
+        "src": figmaIMG,
         "name": "Serverless",
-        "link": "https://aws.amazon.com/"
+        "link": "https://figma.com/"
     },
     {
         "src": firebaseIMG,
