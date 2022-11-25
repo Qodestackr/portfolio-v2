@@ -5,15 +5,15 @@ const testimonials = [
         "value": "Wilson is an awesome problem solver. With dedication, we have enjoyed building products that impacts developers and users from the ground up.",
         "name": "Paul",
         "relation": "Co-worker",
-        "pfp": "https://avatars.githubusercontent.com/u/90365542?v=4",
+        "pfp": "https://avatars.githubusercontent.com/",
         "link": "https://github.com/paulodhiambo"
     },
     {
-        "value": "I've worked on numerous projects with Avneesh and the flow has always been perfect. These includes building libraries, GDSC leads, and competitive programming.",
+        "value": "I've worked on numerous projects with Wilson and the flow has always been perfect. These includes building libraries, GDSC leads, and competitive programming.",
         "name": "William",
         "relation": "Co-builder",
-        "pfp": "https://avatars.githubusercontent.com/u/77309809?v=4",
-        "link": "https://anurag.tech"
+        "pfp": "https://avatars.githubusercontent.com/",
+        "link": "https://williamotieno.tech"
     }
 ]
 const Testimonials = () => {

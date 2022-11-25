@@ -21,9 +21,8 @@ const Intro = () => {
             </h2>
             <p className="w-4/5 md:w-3/5 text-textDark">
                 I&rsquo;m a{' '}
-                <span className="text-neon">FullStack web developer. </span>
-                Focused on building products that will make people's lives better. I also create content in form
-                of blogs and threads. I love to learn new things and I am always open to learn new technologies
+                <span className="text-neon">FullStack web developer </span>
+                focused building accessible mobile and cloud-based applications on the web from the ground up. I consistently contribute to open source and blog about design systems, JAMstack, cloud-native, and serverless computing.
             </p>
             <div className="flex space-x-3">
                 <Link
