@@ -7,6 +7,7 @@ import typescriptIMG from "../images/logos/typescript.svg"
 import tailwindIMG from "../images/logos/tailwind.svg"
 import figmaIMG from "../images/logos/figma.svg"
 import firebaseIMG from '../images/logos/firebase.svg'
+import chakraUI_IMG from '../images/logos/chakraui.svg'
 
 let skills = [
     {
@@ -28,6 +29,11 @@ let skills = [
         "src": tailwindIMG,
         "name": "Tailwind",
         "link": "https://tailwindcss.com/"
+    },
+    {
+    "src": chakraUI_IMG,
+            "name": "Tailwind",
+        "link": "https://chakraui.com/"
     },
     {
         "src": figmaIMG,
