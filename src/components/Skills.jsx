@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 //
 import reactIMG from "../images/logos/react.svg"
 import VuejsIMG from "../images/logos/vue.svg"
+
 import reactNativeIMG from '../images/logos/react-native.svg'
 import typescriptIMG from "../images/logos/typescript.svg"
 import tailwindIMG from "../images/logos/tailwind.svg"
