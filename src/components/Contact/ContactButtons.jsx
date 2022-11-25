@@ -1,5 +1,4 @@
-// import Image from 'next/image';
-import ShowwcaseImg from '../../images/logos/showwcase.svg'
+import React from 'react'
 
 const ContactButtons = ({ link, name, icon, marginLeft }) => {
     return (

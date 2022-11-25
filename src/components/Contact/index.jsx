@@ -18,17 +18,17 @@ const links = [
     {
         name: "Hashnode",
         icon: HashnodeImg,
-        link: "https://xyz.hashnode.com"
+        link: "https://wilson-gichuhi.hashnode.com"
     },
     {
         name: "Showwcase",
         icon: ShowwcaseImg,
-        link: "https://www.showwcase.com/avneesh"
+        link: "https://www.showwcase.com/Qodestackr"
     },
     {
         name: "LinkedIn",
         icon: LinkedIn,
-        link: "https://www.linkedin.com/in/avneesh0612"
+        link: "https://www.linkedin.com/in/wilson-gichuhi"
     }
 ]
 const Contact = () => {
