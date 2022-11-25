@@ -62,32 +62,32 @@ let backend_skills = [
     {
         "src": djangoIMG,
         "name": "Django",
-        "link": "https://reactjs.org/"
+        "link": "https://www.djangoproject.com/"
     },
     {
         "src": NestjsIMG,
         "name": "Nestjs",
-        "link": "https://vuejs.org/"
+        "link": "https://nestjs.com"
     },
     {
         "src": graphqlIMG,
         "name": "GraphQL",
-        "link": "https://www.typescriptlang.org/"
+        "link": "https://graphql.org"
     },
     {
         "src": dockerIMG,
         "name": "Docker",
-        "link": "https://tailwindcss.com/"
+        "link": "https://www.docker.com/"
     },
     {
         "src": gcpIMG,
         "name": "GCP",
-        "link": "https://chakra-ui.com/"
+        "link": "https://cloud.google.com/"
     },
     {
         "src": serverlessIMG,
         "name": "Serverless",
-        "link": "https://figma.com/"
+        "link": "https://aws.amazon.com/"
     },
     {
         "src": firebaseIMG,
