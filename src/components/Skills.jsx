@@ -11,7 +11,7 @@ import chakraUI_IMG from '../images/logos/chakraui.svg'
 
 // nb
 
-import DjangoIMG from "../images/logos/react.svg"
+import DjangoIMG from "../images/logos/django.svg"
 import nestjsIMG from "../images/logos/nestjs.png"
 import graphqlIMG from "../images/logos/graphql.svg"
 import dockerIMG from "../images/logos/docker.svg"
