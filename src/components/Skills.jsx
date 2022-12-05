@@ -11,7 +11,7 @@ import chakraUI_IMG from '../images/logos/chakraui.svg'
 
 // nb
 
-import DjangoIMG from "../images/logos/react.svg"
+import DjangoIMG from "../images/logos/django.svg"
 import nestjsIMG from "../images/logos/nestjs.png"
 import graphqlIMG from "../images/logos/graphql.svg"
 import dockerIMG from "../images/logos/docker.svg"
@@ -61,32 +61,32 @@ let backend_skills = [
     {
         "src": nestjsIMG,
         "name": "nestjs",
-        "link": "https://reactjs.org/"
+        "link": "https://nestjs.com/"
     },
     {
         "src": DjangoIMG,
         "name": "Django",
-        "link": "https://vuejs.org/"
+        "link": "https://www.djangoproject.com/"
     },
     {
         "src": graphqlIMG,
         "name": "GraphQL",
-        "link": "https://www.typescriptlang.org/"
+        "link": "https://graphql.org/"
     },
     {
         "src": dockerIMG,
         "name": "docker",
-        "link": "https://tailwindcss.com/"
+        "link": "https://www.docker.com/"
     },
     {
         "src": gcpIMG,
         "name": "GCP",
-        "link": "https://chakra-ui.com/"
+        "link": "https://cloud.google.com"
     },
     {
         "src": ServerlessIMG,
         "name": "Serverless",
-        "link": "https://figma.com/"
+        "link": "https://aws.amazon.com/"
     },
     {
         "src": firebaseIMG,
