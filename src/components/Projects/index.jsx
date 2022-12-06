@@ -16,7 +16,7 @@ const projectsList = [
         ],
         links: {
             GitHub: "https://github.com/Qodestackr",
-            Live: "https://www.dazzlehr.vercel.com"
+            Live: "https://www.dazzlehr.vercel.app"
         },
         role: "Solo Dev | Fullstack | SaaS"
     },
