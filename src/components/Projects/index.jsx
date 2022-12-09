@@ -31,7 +31,7 @@ const projectsList = [
         ],
         links: {
             GitHub: "https://github.com/Qodestackr",
-            Live: "https://www.taglich.winchy.tech"
+            Live: "https://taglich-shop.vercel.app/"
         },
         role: "Solo Dev | Fullstack"
     },
@@ -46,7 +46,7 @@ const projectsList = [
         ],
         links: {
             GitHub: "https://github.com/Qodestackr",
-            Live: "https://www.producthunt.com/posts/faucetli"
+            Live: "https://cloud.music.vercel.app/" // add to productHunt 
         },
         role: "Solo Dev | Fullstack | SaaS"
     },
