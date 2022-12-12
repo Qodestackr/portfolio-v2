@@ -2,6 +2,7 @@ import Title from '../Common/Title';
 import Project from './Project';
 
 import dazzleHR from '../../images/projects/dazzleHR.png'
+import musicApp from '../../images/projects/musicApp.png'
 
 const projectsList = [
     {
@@ -37,7 +38,7 @@ const projectsList = [
     },
     {
         name: "CloudMusic",
-        image: dazzleHR,
+        image: musicApp,
         about: "Music streaming, podcasts, and audio spaces. A mobile/ Web app inspired by Spotify.",
         tech: [
             "Next.js",
