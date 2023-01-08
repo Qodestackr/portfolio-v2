@@ -3,6 +3,8 @@ import Project from './Project';
 
 import dazzleHR from '../../images/projects/dazzleHR.png'
 import musicApp from '../../images/projects/musicApp.png'
+import taglich from '../../images/projects/taglich.png'
+import superface from '../../images/projects/superface.png'
 
 const projectsList = [
     {
@@ -23,12 +25,13 @@ const projectsList = [
     },
     {
         name: "Taglich",
-        image: dazzleHR,
-        about: "A one stop shop for your daily needs. A mobile and web app powered by Serverless CMS",
+        image: taglich,
+        about: "A one stop shop for your local beauty and wellness services",
         tech: [
             "React",
             "React Native",
-            "AWS & Webiny"
+            "Firebase",
+            "Nesjs"
         ],
         links: {
             GitHub: "https://github.com/Qodestackr",
@@ -53,8 +56,8 @@ const projectsList = [
     },
     {
         name: "Open Source contributions",
-        image: dazzleHR,
-        about: "I contribute and collaborate with friends on various open source projects by documenting and adding features. Repos pinned on my GitHub",
+        image: superface,
+        about: "I contribute and collaborate on various open source projects(such as superface) by documenting and proposing features. More on GitHub",
         tech: [
             "Node.js",
             "Typescript",
