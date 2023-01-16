@@ -18,15 +18,15 @@ const projectsList = [
             "Firebase"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr",
+            GitHub: "https://github.com/Qodestackr/",
             Live: "https://dazzlehr.vercel.app/"
         },
         role: "Solo Dev | Fullstack | SaaS"
     },
     {
-        name: "Taglich",
+        name: "Remo",
         image: taglich,
-        about: "A one stop shop for your local beauty and wellness services",
+        about: "Remote code execution engine. Supports multiple languages. More coming features to save submissions.",
         tech: [
             "React",
             "React Native",
@@ -34,8 +34,8 @@ const projectsList = [
             "Nesjs"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr",
-            Live: "https://taglich-shop.vercel.app/"
+            GitHub: "https://github.com/Qodestackr/Remo",
+            Live: "https://remote-engine.vercel.app/"
         },
         role: "Solo Dev | Fullstack"
     },
@@ -49,15 +49,15 @@ const projectsList = [
             "Typescript"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr",
-            Live: "https://cloud.music.vercel.app/" // add to productHunt 
+            GitHub: "https://github.com/Qodestackr/CloudMusic",
+            Live: "https://cloud-music.vercel.app/" // add to productHunt 
         },
         role: "Solo Dev | Fullstack | SaaS"
     },
     {
         name: "Open Source contributions",
         image: superface,
-        about: "I contribute and collaborate on various open source projects(such as superface) by documenting and proposing features. More on GitHub",
+        about: "I contribute and collaborate on various open source projects by documenting and proposing features. More on GitHub",
         tech: [
             "Node.js",
             "Typescript",

@@ -122,7 +122,7 @@ const Skills = () => {
                         <img
                             alt={skill.name}
                             layout="fill"
-                            objectFit="contain"
+                            // objectFit="contain"
                             className='w-[60px] h-[60px] m-1'
                             src={skill.src}
                         />
@@ -151,7 +151,7 @@ const Skills = () => {
                         <img
                             alt={skill?.name}
                             layout="fill"
-                            objectFit="contain"
+                            // objectFit="contain"
                             className='w-[60px] h-[60px] m-1'
                             src={skill?.src}
                         />

@@ -39,7 +39,7 @@ const Testimonials = () => {
                                     alt={testimonial.name}
                                     className="w-12 h-12 mt-4 rounded-full"
                                     height={250}
-                                    objectFit="contain"
+                                    // objectFit="contain"
                                     src={testimonial.pfp}
                                     width={250}
                                 />

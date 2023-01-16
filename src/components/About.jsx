@@ -19,7 +19,6 @@ const About = () => {
                         alt='me'
                         className="rounded-full"
                         layout="fill"
-                        objectFit="contain"
                         src={MeIMG}
                     />
                 </div>
