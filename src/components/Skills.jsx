@@ -9,7 +9,6 @@ import tailwindIMG from "../images/logos/tailwind.svg"
 import figmaIMG from "../images/logos/figma.svg"
 import chakraUI_IMG from '../images/logos/chakraui.svg'
 
-// nb
 
 import DjangoIMG from "../images/logos/django.svg"
 import nestjsIMG from "../images/logos/nestjs.png"
@@ -95,9 +94,6 @@ let backend_skills = [
     }
 ]
 
-// [React, Vue, React Native, Chakra UI, Tailwind CSS, Figma]
-// [AWS, GCP, Firebase, Django, Node.js, Serverless]
-
 const Skills = () => {
     return (
         <div id="skills">
@@ -130,7 +126,6 @@ const Skills = () => {
                 ))}
             </div>
 
-            {/*  */}
             <Title num={'5'} title="Backend Stack" />
             <div className="flex flex-wrap items-center justify-center mt-10 space-x-6 md:space-x-10 md:items-start md:justify-start">
                 {backend_skills?.map((skill, i) => (
