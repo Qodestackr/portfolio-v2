@@ -13,7 +13,7 @@ import chakraUI_IMG from '../images/logos/chakraui.svg'
 import DjangoIMG from "../images/logos/django.svg"
 import nestjsIMG from "../images/logos/nestjs.png"
 import graphqlIMG from "../images/logos/graphql.svg"
-//import dockerIMG from "../images/logos/docker.svg"
+import dockerIMG from "../images/logos/docker.svg"
 //import gcpIMG from "../images/logos/gcp.png"
 import ServerlessIMG from '../images/logos/serverless.svg_.png'
 import firebaseIMG from '../images/logos/firebase.svg'
@@ -72,13 +72,13 @@ let backend_skills = [
         "name": "GraphQL",
         "link": "https://graphql.org/"
     },
-    /*{
+    {
         "src": dockerIMG,
         "name": "docker",
         "link": "https://www.docker.com/"
     },
     
-    {
+    /*{
         "src": gcpIMG,
         "name": "GCP",
         "link": "https://cloud.google.com"
