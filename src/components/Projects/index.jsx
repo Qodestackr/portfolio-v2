@@ -26,7 +26,7 @@ const projectsList = [
     {
         name: "Remo",
         image: taglich,
-        about: "Remote code execution engine. Supports multiple languages. More coming features to save submissions.",
+        about: "Remote code execution engine. Supports multiple languages. </>",
         tech: [
             "React",
             "React Native",
@@ -34,8 +34,8 @@ const projectsList = [
             "Nesjs"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr/Remo",
-            Live: "https://remote-engine.vercel.app/"
+            GitHub: "https://github.com/Qodestackr/",
+            Live: "https://code-facade.vercel.app/"
         },
         role: "Solo Dev | Fullstack"
     },
