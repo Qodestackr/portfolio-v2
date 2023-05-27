@@ -3,7 +3,7 @@ import Project from './Project';
 
 import dazzleHR from '../../images/projects/dazzleHR.png'
 import musicApp from '../../images/projects/musicApp.png'
-import taglich from '../../images/projects/taglich.png'
+import codeFacade from '../../images/projects/code-facade.png'
 import superface from '../../images/projects/superface.png'
 
 const projectsList = [
@@ -25,13 +25,13 @@ const projectsList = [
     },
     {
         name: "Remo",
-        image: taglich,
+        image: codeFacade,
         about: "Remote code execution engine. Supports multiple languages. </>",
         tech: [
             "React",
-            "React Native",
-            "Firebase",
-            "Nesjs"
+            "Ace/CodeMirror",
+            "Firebase/Auth",
+            "Nesjs/Docker"
         ],
         links: {
             GitHub: "https://github.com/Qodestackr/",
