@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+<body>
+    <!-- Assuming you have a page with buttons to trigger the API calls -->
+    <button id="getUserProfile">Get User Profile</button>
+    <button id="editUserProfile">Edit User Profile</button>
+    <button id="createUser">Create User</button>
+    <button id="deleteUser">Delete User</button>
+    <gml:point gml:id="p21" srsname="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:coordinates>45.67, 88.56</gml:coordinates>
+    </gml:point>
+    <h1>Geocoding Example</h1>
+    <div id="result">Error fetching data.</div>
+
+    <h1>Reverse Geocoding Example</h1>
+    <div id="_result"></div>
+
+    <script>
+      function geocodePlace(place) {
+        const apiUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          place
+        )}`;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data && data.length > 0) {
+              const { lat, lon } = data[0];
+              document.getElementById(
+                "result"
+              ).innerHTML = `Latitude: ${lat}, Longitude: ${lon}`;
+            } else {
+              document.getElementById("result").innerHTML =
+                "Location not found.";
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("result").innerHTML =
+              "Error fetching data.";
+          });
+      }
+
+      // Call the function with the place name you want to geocode
+      geocodePlace("Juja, Kenya");
+      const baseURL = "http://localhost:8000/api/profile/"; // Replace with your Django API endpoint
+
+      // Function to perform the reverse geocoding request
+      function reverseGeocode(lat, lon) {
+        const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data && data.address) {
+              const address = `${data.address.road}, ${data.address.city}, ${data.address.country}`;
+              document.getElementById(
+                "_result"
+              ).innerHTML = `Address: ${address}`;
+            } else {
+              document.getElementById("result").innerHTML =
+                "Address not found.";
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("result").innerHTML =
+              "Error fetching data.";
+          });
+      }
+
+      // Call the function with the coordinates you want to reverse geocode
+      reverseGeocode(-1.10545095, 37.01266481323846);
+
+      // Function to make a GET request to retrieve user profile by ID
+      function getUserProfile(userId) {
+        fetch(baseURL + userId + "/")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("User Profile:", data);
+          })
+          .catch((error) => {
+            console.error("Error fetching user profile:", error);
+          });
+      }
+
+      function createUser(userData) {
+        fetch(baseURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log("New User Created:", data);
+          })
+          .catch((error) => {
+            console.error("Error creating user:", error);
+            console.log("Response:", error.response); // Check the response details
+          });
+      }
+
+      // Function to make a PUT request to edit/update user profile by ID
+      function editUserProfile(userId, updatedData) {
+        fetch(baseURL + userId + "/", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("User Profile Updated:", data);
+          })
+          .catch((error) => {
+            console.error("Error updating user profile:", error);
+          });
+      }
+
+      // Function to make a DELETE request to delete user profile by ID
+      function deleteUser(userId) {
+        fetch(baseURL + userId + "/", {
+          method: "DELETE",
+        })
+          .then((response) => {
+            if (response.ok) {
+              console.log("User deleted successfully.");
+            } else {
+              console.error("Failed to delete user.");
+            }
+          })
+          .catch((error) => {
+            console.error("Error deleting user:", error);
+          });
+      }
+
+      // Add event listeners to buttons
+      document
+        .getElementById("getUserProfile")
+        .addEventListener("click", () => {
+          getUserProfile(3); // Replace 1 with the user ID you want to retrieve
+        });
+
+      document
+        .getElementById("editUserProfile")
+        .addEventListener("click", () => {
+          const updatedData = {
+            // Replace these fields with the updated user data you want to send
+            field1: "updated value",
+            field2: "updated value",
+          };
+          editUserProfile(3, updatedData); // Replace 1 with the user ID you want to update
+        });
+
+      document.getElementById("createUser").addEventListener("click", () => {
+        const userData = {
+          // Replace the empty strings and null values with the new user data you want to create
+          username: "newuser", // Provide a unique username
+          email: "newuser@example.com", // Provide a valid email address
+          first_name: "John", // Provide the user's first name
+          last_name: "Doe", // Provide the user's last name
+          home_address: "123 Main St", // Provide the user's home address
+          phone_number: "123-456-7890", // Provide the user's phone number
+          location: {
+            type: "Point",
+            coordinates: [77.601835, 12.91092],
+          },
+        };
+
+        createUser(userData);
+      });
+
+      document.getElementById("deleteUser").addEventListener("click", () => {
+        deleteUser(1); // Replace 1 with the user ID you want to delete
+      });
+
+      console.log(1);
+    </script>
+  
+
+</body>

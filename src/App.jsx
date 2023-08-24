@@ -25,7 +25,3 @@ function App() {
 }
 
 export default App
-
-// http://demo.tendapa.co.ke/personal-profile-owner.html
-// https://demo.tendapa.co.ke/open-store.html
-// https://demo.tendapa.co.ke/fashion-jewelry.html
