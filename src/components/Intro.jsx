@@ -22,7 +22,9 @@ const Intro = () => {
             <p className="w-4/5 md:w-3/5 text-textDark">
                 I&rsquo;m a{' '}
                 <span className="text-neon">FullStack web developer </span>
-                focused building accessible mobile and cloud-based applications on the web from the ground up. I consistently contribute to open source and blog about design systems, JAMstack, cloud-native, and serverless computing.
+                focused on building GIS, web, and cross-platform cloud-based applications. {/**Open Source made me and my interest in GIS is as a result of the many untold stories in the real of Geospatial */}
+
+                I consistently contribute to open source and content creation on design systems, JAMstack, cloud-native, and serverless computing.
             </p>
             <div className="flex space-x-3">
                 <Link
