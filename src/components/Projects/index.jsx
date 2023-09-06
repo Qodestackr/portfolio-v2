@@ -2,7 +2,7 @@ import Title from '../Common/Title';
 import Project from './Project';
 
 import dazzleHR from '../../images/projects/dazzleHR.png'
-import musicApp from '../../images/projects/musicApp.png'
+import AcuvaGIS from '../../images/projects/AcuvaGIS.png'
 import codeFacade from '../../images/projects/code-facade.png'
 import superface from '../../images/projects/superface.png'
 
@@ -18,7 +18,7 @@ const projectsList = [
             "Firebase"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr/",
+            GitHub: "https://github.com/Qodestackr/dazzle-facade",
             Live: "https://dazzle-facade.vercel.app/"
         },
         role: "Solo Dev | Fullstack | SaaS"
@@ -40,19 +40,20 @@ const projectsList = [
         role: "Solo Dev | Fullstack"
     },
     {
-        name: "CloudMusic",
-        image: musicApp,
-        about: "Music streaming, podcasts, and audio spaces. A mobile/ Web app inspired by Spotify.",
+        name: "Acuva GIS",
+        image: AcuvaGIS,
+        about: "Open Source Geospatial Development. From Web Mapping to Web Mapping Services, Cloud and Serverless for GIS work.",
         tech: [
-            "Next.js",
-            "React Native",
-            "Typescript"
+            "Python",
+            "Open Data Portal",
+            "Spatial Analytics",
+            "Custom Solutions"
         ],
         links: {
-            GitHub: "https://github.com/Qodestackr/CloudMusic",
-            Live: "https://cloud-music.vercel.app/" // add to productHunt 
+            GitHub: "https://github.com/AcuvaGIS",
+            Live: "https://acuvagis.github.io/core-docs/" // add to productHunt 
         },
-        role: "Solo Dev | Fullstack | SaaS"
+        role: "Team of Two | Fullstack | GIS and Spatial Analytics"
     },
     {
         name: "Open Source contributions",
