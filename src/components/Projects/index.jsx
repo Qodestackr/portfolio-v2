@@ -51,7 +51,7 @@ const projectsList = [
         ],
         links: {
             GitHub: "https://github.com/AcuvaGIS",
-            Live: "https://acuvagis.github.io/core-docs/" // add to productHunt 
+            Live: "https://acuvagis.github.io/core-docs/home/" // add to productHunt 
         },
         role: "Team of Two | Fullstack | GIS and Spatial Analytics"
     },
