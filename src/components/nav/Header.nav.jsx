@@ -47,7 +47,7 @@ const Header = () => {
                     <NavOption item={item} key={i} number={i + 1} />
                 ))}
             </ol>
-            <a href="https://drive.google.com/file/d/1JYnm6Ys2vJPB4x7TyfgH1eahRLvpdLWr/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view?usp=sharing"
                 target="_blank"
             >Resume</a>
         </nav>
