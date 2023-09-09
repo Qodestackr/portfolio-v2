@@ -1,6 +1,5 @@
-import NavOption from './NavOption';
 import navOptions from './navOptions';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Header = () => {
@@ -44,12 +43,33 @@ const Header = () => {
 
             <ol className="hidden space-x-8 md:flex">
                 {navOptions.map((item, i) => (
-                    <NavOption item={item} key={i} number={i + 1} />
+                    <React.Fragment key={i}>
+                        {item.isExternal ? (
+                            <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {item.name}
+                            </a>
+                        ) : (
+                            <Link
+                                activeClass="active"
+                                duration={500}
+                                href={item.href}
+                                offset={-100}
+                                smooth={true}
+                                spy={true}
+                                title={item.name}
+                                to={item.href}
+                            >
+                                {item.name}
+                            </Link>
+                        )}
+                    </React.Fragment>
                 ))}
+
             </ol>
-            <a href="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view?usp=sharing"
-                target="_blank"
-            >Resume</a>
         </nav>
     );
 };

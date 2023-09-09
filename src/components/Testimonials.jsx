@@ -1,4 +1,5 @@
 import Title from './Common/Title';
+import TestimonialImg from '../images/me.png'
 
 const testimonials = [
     {
@@ -37,10 +38,10 @@ const Testimonials = () => {
                             <div className="relative w-12 h-12 mt-4 rounded-full">
                                 <img
                                     alt={testimonial.name}
-                                    className="w-12 h-12 mt-4 rounded-full"
+                                    className="w-10 h-8 mt-4 rounded-full"
                                     height={250}
                                     // objectFit="contain"
-                                    src={testimonial.pfp}
+                                    src={TestimonialImg}
                                     width={250}
                                 />
                             </div>
