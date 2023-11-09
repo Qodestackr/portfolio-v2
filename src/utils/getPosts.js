@@ -1,7 +1,7 @@
 const getUserDataAndPosts = async (username) => {
   const userDataQuery = `
    {
-  user(username: "avneesh0612") {
+  user(username: "qodestackr") {
     publication {
       posts(page: 0) {
         _id
