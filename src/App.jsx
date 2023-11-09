@@ -22,7 +22,7 @@ function App() {
       {/* <Blog /> */}
       <Contact />
 
-      <PDFViewer />
+      {/* <PDFViewer /> */}
     </Layout>
   )
 }
