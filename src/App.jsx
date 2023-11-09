@@ -20,6 +20,11 @@ function App() {
       {/* <Blog /> */}
       <Contact />
 
+      <object data="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view" type="application/pdf" width="100%" height="100%">
+        <p>Alternative text - include a link <a href="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view">to the PDF!</a></p>
+        Hello, 
+      </object>
+
     </Layout>
   )
 }
