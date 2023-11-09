@@ -9,6 +9,8 @@ import Testimonials from "./components/Testimonials";
 import Contact from './components/Contact';
 import Blog from './components/Blog/Blog'
 
+import resumeURL from './resume.pdf'
+
 function App() {
   return (
     <Layout>
@@ -20,7 +22,7 @@ function App() {
       {/* <Blog /> */}
       <Contact />
 
-      <object data="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view" type="application/pdf" width="100%" height="100%">
+      <object data={resumeURL} type="application/pdf" width="100%" height="100%">
         <p>Alternative text - include a link <a href="https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view">to the PDF!</a></p>
         Hello, 
       </object>
