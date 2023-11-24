@@ -1,10 +1,19 @@
+import ResumePDF from "./images/resume/wilson_gichuhi_resume.pdf";
 
 const PDFViewer = () => {
- return (
- <div>
- <iframe src={'https://github.com/Qodestackr/portfolio-v2/blob/master/resume.pdf'} width='100%' height='500px' />
- </div>
- );
+    const zoomStyle = {
+        zoom: '140%',
+      };
+  return (
+    <div className="w-screen h-screen">
+      <iframe 
+      title="Wilson Gichuhi | My Resume"
+      src={ResumePDF} 
+      style={zoomStyle}
+      className="w-full h-full" 
+      />
+    </div>
+  );
 };
 
 export default PDFViewer;

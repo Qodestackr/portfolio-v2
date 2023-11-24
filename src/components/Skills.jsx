@@ -10,6 +10,7 @@ import figmaIMG from "../images/logos/figma.svg"
 import chakraUI_IMG from '../images/logos/chakraui.svg'
 
 
+import GolangIMG from "../images/logos/golang.jpg"
 import DjangoIMG from "../images/logos/django.svg"
 import nestjsIMG from "../images/logos/nestjs.png"
 import graphqlIMG from "../images/logos/graphql.svg"
@@ -17,6 +18,7 @@ import dockerIMG from "../images/logos/docker.svg"
 //import gcpIMG from "../images/logos/gcp.png"
 import ServerlessIMG from '../images/logos/serverless.svg_.png'
 import firebaseIMG from '../images/logos/firebase.svg'
+
 
 let frontend_skills = [
     {
@@ -57,6 +59,11 @@ let frontend_skills = [
 ]
 
 let backend_skills = [
+    {
+        "src": GolangIMG,
+        "name": "Golang",
+        "link": "https://go.dev/"
+    },
     {
         "src": nestjsIMG,
         "name": "nestjs",

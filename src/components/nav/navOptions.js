@@ -25,7 +25,7 @@ const navOptions = [
     },
     {
         name: 'Resume',
-        href: 'https://drive.google.com/file/d/188mesbieUkxT4rvn-g7dwz3jLQvY_TBT/view?usp=sharing',
+        href: '/resume',
         isExternal: true,
     },
 ];
