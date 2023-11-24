@@ -14,7 +14,7 @@ const projectsList = [
     tech: ["End to End Farming Management Portal", "Written in Go and Next.js"],
     links: {
       GitHub: "https://github.com/Qodestackr/farmex_suite",
-      Live: "https://farmex-suite.vercel.app/",
+      Live: "https://farmex-suite.vercel.app/dashboard",
     },
     about: `Farmex Suite is a suite of Cloud and SaaS products for the Modern Farming. Key enabler solutions eliminating guesswork in farming.`,
     role: "Solo Dev | Fullstack | SaaS",
