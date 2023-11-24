@@ -1,0 +1,57 @@
+/* pdf.css */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .pagec {
+    margin-top: 10px;
+  }
+  
+  .buttonc {
+    display: flex;
+    justify-content: space-between;
+    width: 100px; /* Adjust as needed */
+    margin-top: 10px;
+  }
+  
+  .Pre,
+  .Next {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Pre:disabled,
+  .Next:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+
+/*****************ATTEMPTING TO STYLE SCROLLBAR WITHIN THE IFRAME COMPONENT**********************/
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #c7d3ff var(--navy);
+
+  /* For Webkit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c7d3ff;
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #222e50 !important;
+  }
+}

@@ -30,18 +30,17 @@ const Header = () => {
         handleShow ? "shadow-2xl" : ""
       }`}
     >
-      <Link
-        activeClass="active"
-        duration={500}
-        href="intro"
-        offset={-100}
-        smooth={true}
-        spy={true}
-        title="Wilson"
-        to="intro"
+      <RouterLink
+        // duration={500}
+        // href="/"
+        // offset={-100}
+        // smooth={true}
+        // spy={true}
+        // title="Wilson"
+        to="/"
       >
         <h1 className="text-lg font-semibold">Wilson | PORTFOLIO</h1>
-      </Link>
+      </RouterLink>
 
       <ol className="hidden space-x-8 md:flex">
         {navOptions.map((item, i) => (

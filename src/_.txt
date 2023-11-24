@@ -1,0 +1,58 @@
+import React, { useState } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
+
+import ResumePDF from "./images/resume/wilson_gichuhi_resume.pdf";
+import { Header } from "./components/nav/Header.nav";
+
+const PDFViewer = () => {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  /*To Prevent right click on screen*/
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
+  /*When document gets loaded successfully*/
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
+  function changePage(offset) {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  }
+
+  function previousPage() {
+    changePage(-1);
+  }
+
+  function nextPage() {
+    changePage(1);
+  }
+
+  const iframeStyles = {
+    zoom: "140%",
+    overflow: "hidden",
+  };
+  return (
+    <div className="w-screen h-screen">
+      <Header />
+
+      <Document file={ResumePDF} onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={1} />
+      </Document>
+      {/* <div className="mt-20 h-full">
+        <iframe
+          title="Wilson Gichuhi | My Resume"
+          src={ResumePDF}
+          style={iframeStyles}
+          className="w-full h-full"
+        />
+      </div> */}
+    </div>
+  );
+};
+
+export default PDFViewer;
