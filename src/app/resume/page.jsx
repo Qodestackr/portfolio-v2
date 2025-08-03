@@ -1,18 +1,38 @@
 "use client"
+import { useRouter } from 'next/navigation'
+import { ArrowLeft } from 'lucide-react'
+import { Button } from '../../components/ui/button'
 
 export default function ResumePage() {
+  const router = useRouter()
+
+  const handleBack = () => {
+    router.back()
+  }
+
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto p-8 bg-white text-gray-900">
+      <div className="max-w-4xl mx-auto p-5 bg-white text-gray-900">
+        <div className="mb-3">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleBack}
+            className="flex h-8 font-light text-xs items-center gap-2 hover:bg-gray-50"
+          >
+            <ArrowLeft className="h-4 w-4 stroke-1" />
+            Back
+          </Button>
+        </div>
+
         {/* Header */}
-        <header className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Wilson Gichuhi</h1>
-          <h2 className="text-xl text-gray-700 mb-4">Front-End React Developer | AI Interface Specialist</h2>
+        <header className="mb-5">
+          <h1 className="text-3xl font-normal text-gray-900 mb-2">Wilson Gichuhi</h1>
+          <h2 className="text-xl text-gray-700 mb-4">Engineer | AI UX Specialist</h2>
           <div className="flex flex-wrap gap-4 text-sm text-gray-600">
             <span>📍 Nairobi, Kenya (Remote)</span>
             <span>📧 winchygichu@gmail.com</span>
             <span>📱 +254700652437</span>
-            <span>🔗 GitHub • LinkedIn • Portfolio</span>
           </div>
         </header>
 
@@ -22,38 +42,38 @@ export default function ResumePage() {
             Professional Summary
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Front-end React developer with 5+ years building production-grade dashboards, admin panels, and data-driven
-            interfaces for AI-powered platforms. Expert in translating complex workflows into clean, maintainable React
-            components using hooks, context, and modern tooling. Specialized in rapid prototyping from sketches to
-            production-ready UIs that simulate real-world business tools and user workflows.
+            Full-Stack Engineer with 5+ years architecting production systems that power Africa's B2B fintech verticals, healthcare, logistics infra.
+            Built rails and enterprise API integrations, designed supply chain platforms coordinating entire distribution networks,
+            and shipped AI-powered interfaces that power customer experiences. Expert in React, TypeScript, and performance-critical web
+            technologies—with Go/Python backend experience enabling full-stack system design. Specialized in scalable frontend systems
+            with intuitive AI user experiences that operations teams actually use. Led engineering for platforms like Alcora, moving real
+            money and goods across Kenya's markets daily.
           </p>
         </section>
 
-        {/* Core Competencies */}
         <section className="mb-8">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3 border-b border-gray-300 pb-1">Core Competencies</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3 border-b border-gray-300 pb-1">Core Engineering Competencies</h3>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <h4 className="font-medium text-gray-800 mb-2">Frontend Technologies</h4>
+              <h4 className="font-medium text-gray-800 mb-2">Performance-Critical Systems</h4>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>• React (Hooks, Context, Functional Components) - 5+ years</li>
-                <li>• JavaScript/TypeScript - Advanced proficiency</li>
-                <li>• HTML5, CSS3, Responsive Design</li>
-                <li>• Tailwind CSS, CSS Modules, Styled Components</li>
+                <li>• WASM - Client-side AI inference, medical imaging processing</li>
+                <li>• Real-time - WebRTC, WebSockets, live data streams</li>
+                <li>• Memory optimization - Large datasets (DICOM, financial, logistics)</li>
+                <li>• Concurrent processing - Web Workers, background computations</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-gray-800 mb-2">Modern Tooling & Workflow</h4>
+              <h4 className="font-medium text-gray-800 mb-2">Production Architecture</h4>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Vite, Next.js, Create React App</li>
-                <li>• Redux, Zustand, Context API</li>
-                <li>• REST APIs, GraphQL integration</li>
-                <li>• Git, GitHub, CI/CD workflows</li>
+                <li>• Distributed state - Event sourcing, offline-first systems</li>
+                <li>• System integration - Payment rails, ERP modernization(Headless Approaches)</li>
+                <li>• Edge computing - CDN optimization, service workers</li>
+                <li>• Observability - Performance, Otel, analytics pipelines</li>
               </ul>
             </div>
           </div>
         </section>
-
         {/* Professional Experience */}
         <section className="mb-8">
           <h3 className="text-lg font-semibold text-gray-900 mb-4 border-b border-gray-300 pb-1">
@@ -258,7 +278,7 @@ export default function ResumePage() {
           <div>
             <h4 className="font-medium text-gray-800">BSc. Computer Technology</h4>
             <p className="text-sm text-gray-700">Jomo Kenyatta University of Agriculture and Technology</p>
-            <p className="text-xs text-gray-600">Focus: Software Engineering, Web Technologies, System Design</p>
+            <p className="text-xs text-gray-600">Focus: Software Engineering, Distributed Systems, Web Technologies</p>
           </div>
         </section>
 
