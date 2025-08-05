@@ -17,6 +17,7 @@ import {
   FileText,
   Zap,
   Brain,
+  ExternalLink,
 } from "lucide-react"
 
 export default function Portfolio() {
@@ -35,6 +36,7 @@ export default function Portfolio() {
       ],
       domain: "FMCG Revenue Ops",
       year: "2025",
+      link: "https://alcorabooks.com",
     },
     {
       title: "AfyaTelemed",
@@ -50,6 +52,7 @@ export default function Portfolio() {
       ],
       domain: "HealthTech",
       year: "2024",
+      link: "https://afyatelemed.com",
     },
     {
       title: "McSystems Medical",
@@ -67,6 +70,22 @@ export default function Portfolio() {
       year: "2024",
     },
     {
+      title: "JHUB Africa",
+      subtitle: "Climate-Smart Agricultural Solutions",
+      description: "Digital trade platforms for agricultural analytics",
+      icon: <Leaf className="w-6 h-6" />,
+      tech: ["React", "Next.js", "Data Visualization", "GIS", "Analytics"],
+      highlights: [
+        "Interactive data visualization for agricultural reporting",
+        "Microsoft-led team collaboration (25% dev velocity increase)",
+        "Enterprise-grade authentication systems",
+        "Mobile-first responsive design patterns",
+      ],
+      domain: "AgriTech",
+      year: "2023-2024",
+      link: "https://jhubafrica.com",
+    },
+    {
       title: "SISI Markets",
       subtitle: "East African Digital Marketplace",
       description: "Common portal connecting 1000+ stores and agents across East Africa",
@@ -80,22 +99,7 @@ export default function Portfolio() {
       ],
       domain: "E-commerce & GIS",
       year: "2023",
-    },
-    {
-      title: "JHUB AgriTech",
-      subtitle: "Climate-Smart Agricultural Solutions",
-      description: "Digital trade platforms for agricultural analytics",
-      icon: <Leaf className="w-6 h-6" />,
-      tech: ["React", "Next.js", "Data Visualization", "Analytics"],
-      highlights: [
-        "Interactive data visualization for agricultural reporting",
-        "Microsoft-led team collaboration (25% dev velocity increase)",
-        "Enterprise-grade authentication systems",
-        "Mobile-first responsive design patterns",
-      ],
-      domain: "AgriTech",
-      year: "2023-2024",
-    },
+    }
   ]
 
   const handleResumeClick = () => {
@@ -106,8 +110,18 @@ export default function Portfolio() {
     window.open("https://github.com/Qodestackr", "_blank")
   }
 
+  const linkedInLink = () => {
+    window.open("https://linkedin.com/in/wilson-gichuhi", "_blank")
+  }
+
   const handleEmailClick = () => {
     window.location.href = "mailto:winchygichu@gmail.com"
+  }
+
+  const handleProjectClick = (link) => {
+    if (link) {
+      window.open(link, "_blank")
+    }
   }
 
   return (
@@ -134,13 +148,13 @@ export default function Portfolio() {
               <Github className="w-4 h-4" />
               <span>GitHub</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 cursor-pointer hover:text-blue-600" onClick={linkedInLink}>
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={handleEmailClick}>
+            <Button size="lg" disabled className="bg-blue-600 hover:bg-blue-700" onClick={handleEmailClick}>
               <Mail className="w-4 h-4 mr-2" />
               Get In Touch
             </Button>
@@ -158,18 +172,27 @@ export default function Portfolio() {
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Featured Projects</h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
+              <Card
+                key={index}
+                className={`group hover:shadow-lg transition-shadow duration-300 ${project.link ? 'cursor-pointer hover:shadow-xl' : ''}`}
+                onClick={() => handleProjectClick(project.link)}
+              >
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-3">
                       <div className="p-2 bg-blue-100 rounded-lg text-blue-600">{project.icon}</div>
                       <div>
-                        <CardTitle className="text-xl">{project.title}</CardTitle>
+                        <div className="flex items-center gap-2">
+                          <CardTitle className="text-xl">{project.title}</CardTitle>
+                          {project.link && (
+                            <ExternalLink className="w-4 h-4 text-blue-600 opacity-70 group-hover:opacity-100 transition-opacity" />
+                          )}
+                        </div>
                         <p className="text-sm text-gray-600">{project.subtitle}</p>
                       </div>
                     </div>
                     <div className="text-right">
-                      <Badge variant="secondary" className="text-xs">
+                      <Badge variant="secondary" className="text-xs h-4 font-light">
                         {project.domain}
                       </Badge>
                       <p className="text-xs text-gray-500 mt-1">{project.year}</p>
@@ -181,7 +204,7 @@ export default function Portfolio() {
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs">
+                        <Badge key={techIndex} variant="outline" className="text-xs h-4 font-light">
                           {tech}
                         </Badge>
                       ))}
@@ -352,7 +375,7 @@ export default function Portfolio() {
             Ready to architect scalable systems that solve real problems? {"Let's"} discuss your next project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={handleEmailClick}>
+            <Button size="lg" disabled className="bg-blue-600 hover:bg-blue-700" onClick={handleEmailClick}>
               <Mail className="w-4 h-4 mr-2" />
               Start a Conversation
             </Button>

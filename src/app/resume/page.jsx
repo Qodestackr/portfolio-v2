@@ -282,17 +282,14 @@ export default function ResumePage() {
           </div>
         </section>
 
-        {/* Why AfterQuery */}
-        <section className="mb-6">
+        <section className="mb-3">
           <h3 className="text-lg font-semibold text-gray-900 mb-3 border-b border-gray-300 pb-1">
             Why I'm Excited About AfterQuery
           </h3>
           <p className="text-sm text-gray-700 leading-relaxed">
-            I'm passionate about building interfaces that bridge human workflows and AI systems. My experience creating
-            data-driven dashboards and business simulation tools aligns perfectly with AfterQuery's mission of
-            generating high-quality training data through realistic professional interfaces. I thrive in async,
-            project-based environments and can rapidly translate product requirements into clean, maintainable React
-            applications.
+            I'm a fullstack engineer who loves building products end-to-end—from backend systems and APIs to polished, user-friendly interfaces. 
+            I’m especially drawn to teams solving real-world problems with clean architecture, fast iteration, and thoughtful UX. I thrive in async, 
+            impact-driven environments and bring a pragmatic approach to shipping features that are reliable, scalable, and easy to maintain.
           </p>
         </section>
 
