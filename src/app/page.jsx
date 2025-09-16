@@ -99,6 +99,7 @@ export default function Portfolio() {
       ],
       domain: "E-commerce & GIS",
       year: "2023",
+      link: "https://sisi.ke",
     }
   ]
 
@@ -234,13 +235,12 @@ export default function Portfolio() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {/* Frontend & TypeScript */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Code2 className="w-8 h-8 text-blue-600" />
                 </div>
-                <CardTitle className="text-lg">Frontend & TypeScript</CardTitle>
+                <CardTitle className="text-lg">Fullstack TypeScript</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
@@ -272,7 +272,7 @@ export default function Portfolio() {
                     <Badge className="bg-purple-600 hover:bg-purple-700">LangChain</Badge>
                   </div>
                   <p className="text-sm text-gray-600">
-                    High-performance APIs and AI-powered systems with FastAPI and LangChain integration
+                    High-performance APIs and AI-workflows with FastAPI and LangChain integration
                   </p>
                 </div>
               </CardContent>
