@@ -283,9 +283,6 @@ export default function ResumePage() {
         </section>
 
         <section className="mb-3">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3 border-b border-gray-300 pb-1">
-            Why I'm Excited About AfterQuery
-          </h3>
           <p className="text-sm text-gray-700 leading-relaxed">
             I'm a fullstack engineer who loves building products end-to-end—from backend systems and APIs to polished, user-friendly interfaces. 
             I’m especially drawn to teams solving real-world problems with clean architecture, fast iteration, and thoughtful UX. I thrive in async, 
