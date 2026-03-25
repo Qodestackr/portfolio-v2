@@ -1,14 +1,24 @@
-import { Inter } from "next/font/google"
+import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const display = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
+})
+
+const body = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["300", "400", "500", "600", "700"],
+})
 
 export const metadata = {
-  title: "Wilson Gichuhi | Full-Stack Engineer & System Architect",
+  title: "Wilson Gichuhi | AI Systems Engineer",
   description:
-    "Full-stack engineer building scalable systems across FinTech, HealthTech, and Logistics in Africa. Expert in React, Python, Go, and AI-powered platforms.",
+    "AI Systems Engineer specializing in deterministic agentic orchestration, eval infrastructure, and grounded retrieval for production reliability.",
   keywords:
-    "Wilson Gichuhi, Full-Stack Engineer, React Developer, Python, Go, FinTech, HealthTech, Kenya, Africa, System Architect",
+    "Wilson Gichuhi, AI Systems Engineer, Agentic Orchestration, Evaluation Infrastructure, Retrieval, Kenya, Remote",
   author: "Wilson Gichuhi",
   viewport: "width=device-width, initial-scale=1",
 }
@@ -16,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${display.variable} ${body.variable} antialiased`}>{children}</body>
     </html>
   )
 }

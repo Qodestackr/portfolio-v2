@@ -460,7 +460,7 @@ export default function FocusCommandCenter() {
             "People think focus means saying yes to the thing you've got to focus on. But that's not what it means at
             all. It means saying no to the hundred other good ideas."
           </blockquote>
-          <p className="text-gray-500 text-xs mt-2">— Steve Jobs</p>
+          <p className="text-gray-500 text-xs mt-2">- Steve Jobs</p>
         </div>
       </div>
     </div>
