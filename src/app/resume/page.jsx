@@ -175,7 +175,7 @@ export default function ResumePage() {
           </Button>
           <Button asChild className="rounded-full bg-slate-900 px-5 text-slate-100 hover:bg-slate-800">
             <a
-              href="https://drive.google.com/file/d/1nYu_mnlKgl5f_sTChryePYoc6i-FItsf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1yfSCTRjh8LtYWSc9qILUYiIu_76y619-/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
