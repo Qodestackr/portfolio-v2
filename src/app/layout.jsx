@@ -14,11 +14,11 @@ const body = IBM_Plex_Sans({
 })
 
 export const metadata = {
-  title: "Wilson Gichuhi | AI Systems Engineer",
+  title: "Wilson Gichuhi | AI Systems & Reliability Engineer",
   description:
-    "AI Systems Engineer specializing in deterministic agentic orchestration, eval infrastructure, and grounded retrieval for production reliability.",
+    "AI Systems & Reliability Engineer specializing in explicit orchestration, evaluation infrastructure, and grounded runtime systems for production AI.",
   keywords:
-    "Wilson Gichuhi, AI Systems Engineer, Agentic Orchestration, Evaluation Infrastructure, Retrieval, Kenya, Remote",
+    "Wilson Gichuhi, AI Systems & Reliability Engineer, Agentic Orchestration, Evaluation Infrastructure, Retrieval, Kenya, Remote",
   author: "Wilson Gichuhi",
   viewport: "width=device-width, initial-scale=1",
 }

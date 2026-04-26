@@ -15,141 +15,150 @@ import { Badge } from "../../components/ui/badge"
 import { Button } from "../../components/ui/button"
 
 const highlights = [
-  { value: "100%", label: "Execution traceability for tax compliant flows" },
-  { value: "99%", label: "Malformed outputs removed with schema guards" },
-  { value: "40%", label: "SKU matching precision gain on noisy text" },
-  { value: "Sub second", label: "Inference gateway latency with semantic caching" },
+  { value: "40%", label: "Promotional wastage reduced with profit-aware promo tracking" },
+  { value: "70%", label: "Manual CRM data entry cut with voice-to-CRM logging" },
+  { value: "End-to-end", label: "Evaluation ownership from environment setup to oracle verification" },
+  { value: "Live context", label: "MCP runtime integrations over downstream commerce and compliance systems" },
 ]
 
 const pillars = [
   {
-    title: "Deterministic orchestration",
-    detail: "Finite state machines, immutable transitions, and audit ready traces.",
+    title: "State-driven orchestration",
+    detail: "Explicit state machines, durable sessions, and traceable workflow execution.",
   },
   {
     title: "Evaluation infrastructure",
-    detail: "Evals as code, adversarial testing, and reliability scoring.",
+    detail: "Oracle verification, NLI-backed grounding, and adversarial model testing.",
   },
   {
-    title: "Grounded retrieval",
-    detail: "Hybrid search, rerankers, and atomic fact extraction.",
+    title: "Grounded runtime systems",
+    detail: "Retrieval, ranking, validation, and live business context through MCP services.",
   },
 ]
 
 const experience = [
   {
-    role: "Builder and AI Systems Engineer, Founder",
-    company: "Promco",
-    timeframe: "03/2026 to Present",
+    role: "AI Evaluation Engineer (Contractor)",
+    company: "Bespoke Labs",
+    timeframe: "03/2026",
     bullets: [
-      "Architected WhatsApp to eTIMS order processing with finite state machines using XState and Apache Burr",
-      "Built a Modal inference gateway with semantic caching for Bespoke MiniCheck and sub second latency",
-      "Effect TS middleware with schema validation and circuit breakers removed 99 percent malformed outputs",
-      "Hybrid search with Voyage rerankers increased SKU matching precision by 40 percent",
-      "Built a Model Context Protocol server bridging frontier models with Saleor GraphQL for grounded queries",
+      "Contributed task authorship to OpenThoughts, Bespoke Labs' open reasoning dataset initiative that produced state-of-the-art small reasoning models trained on curated chain-of-thought data in collaboration with Stanford, Berkeley, and UT Austin.",
+      "Designed and authored Terminal Bench style agentic coding tasks in the Harbor format, covering concurrency bugs, semaphore leaks, and write-ordering failures across real-world TypeScript and healthcare system scenarios, with full pipeline ownership from environment setup to oracle verification.",
+      "Applied Bespoke-MiniCheck for claim-level factual grounding in evaluation pipelines, using NLI-based verification over LLM-as-judge alone to improve signal reliability in automated test suites.",
     ],
   },
   {
-    role: "AI Training and Model Evaluation Engineer",
-    company: "AfterQuery",
-    timeframe: "Aug 2025 to Mar 25, 2026",
+    role: "Builder & AI Systems Engineer, Founder",
+    company: "Promco",
+    timeframe: "03/2026",
     bullets: [
-      "Benchmarked frontier models for logic correctness and security vulnerabilities",
-      "Built Project Anvil style environments with gold patch verification and automated oracles",
-      "Terminal Bench v2 tasks covering concurrency bugs, security flaws, and infra debugging",
-      "Automated red teaming for model generated system architectures",
+      "Building Promco, an order-to-approval system for liquor distributors that turns WhatsApp orders into commercially reviewable drafts before stock, margin, promo, and compliance decisions are committed.",
+      "Designed the orchestration layer with explicit state machines and durable session handling, replacing free-form agent loops with traceable, recoverable workflow execution for compliance-sensitive order flows.",
+      "Built guardrails around AI-assisted order processing using typed tool interfaces, schema validation, prompt/version control, and failure tracing so the system is debuggable and safe to run in production.",
+      "Developed the product-resolution layer for noisy real-world order language (Kenyan slang), combining retrieval, ranking, and structured validation to improve SKU matching on colloquial WhatsApp orders.",
+      "Built MCP-based integrations and runtime services over downstream commerce/compliance systems so models operate against live business context rather than ungrounded text generation.",
+    ],
+  },
+  {
+    role: "AI Training & Model Evaluation Engineer",
+    company: "AfterQuery",
+    timeframe: "08/2025",
+    bullets: [
+      "Frontier Model Benchmarking: Conducted systematic evaluations of frontier LLMs for logic correctness and security; engineered automated test suites to identify vulnerabilities across domains.",
+      "SWE-Bench Style Engineering (Project Anvil): Built end-to-end evaluation environments using base snapshots and gold-patch verification; automated oracle verification pipelines for complex domains including HL7 health-tech integrations and secure build systems.",
+      "Terminal Bench v2: Built real-world agentic coding tasks targeting concurrency bugs, security vulnerabilities, and infra debugging with full pipeline ownership from gold patches to oracle verification and pytest suites in containerized environments.",
+      "Adversarial Engineering: Designed stress tests for LLM-driven API design, moving beyond naive prompting to automated red-teaming of model-generated system architectures.",
     ],
   },
   {
     role: "Backend Engineer",
     company: "Alcora",
-    timeframe: "Feb 2025 to Aug 2025",
+    timeframe: "02/2025 - 09/2025",
     bullets: [
-      "Architected a headless ERP for multi tenant FMCG operations with real time intelligence",
-      "Built payment rails with automated debt reconciliation across brands, distributors, and retailers",
-      "Embedded geospatial intelligence for delivery tracking, route batching, and dispatch",
-      "Promo cost versus incremental gross profit tracking reduced promotional wastage by 40 percent",
+      "Architected Headless ERP as a multi-tenant backend with real-time stock and demand intelligence across distributed FMCG actors.",
+      "Built core payment rails with automated debt reconciliation across brands, distributors, and retailers.",
+      "Embedded geospatial intelligence for delivery tracking, route batching, and dispatch automation.",
+      "Enabled promo cost vs incremental gross profit tracking (North Star Metric <= 0.6), reducing promotional wastage by 40%.",
     ],
   },
   {
     role: "Founding Engineer",
     company: "AfyaTelemed",
-    timeframe: "May 2024 to Jul 2025",
+    timeframe: "05/2024 - 07/2025",
     bullets: [
-      "Architected a HIPAA compliant telemedicine platform covering triage, consultations, pharmacy, and labs",
-      "Built secure WebRTC video consultations with end to end encryption and payment processing",
-      "Stack: Python, FastAPI, Next.js, WebRTC, AWS",
+      "Architected a HIPAA-compliant telemedicine platform from scratch, covering triage, consultations, pharmacy, and lab integration.",
+      "Built secure video consultation with E2E encryption (WebRTC) and payment processing across local and international gateways.",
+      "Stack: Python/FastAPI, Next.js, WebRTC, AWS",
     ],
   },
   {
     role: "Software Engineer",
-    company: "McSystems and Medical Inc.",
-    timeframe: "Apr 2024 to Oct 2024",
+    company: "McSystems & Medical Inc.",
+    timeframe: "04/2024 - 10/2024",
     bullets: [
-      "Built voice to CRM logging that reduced manual data entry by 70 percent",
-      "Rebuilt a legacy PHP marketplace into an offline first Next.js platform",
-      "Designed a unified API layer integrating CRM and marketplace systems",
+      "Architected a CRM with voice-to-CRM logging, reducing manual data entry by 70%.",
+      "Rebuilt a legacy PHP medical sales marketplace into an offline-first Next.js platform.",
+      "Designed a unified API layer integrating CRM and marketplace systems.",
     ],
   },
   {
     role: "Fullstack Developer",
     company: "JHUB Innovation Africa",
-    timeframe: "Oct 2023 to May 2024",
+    timeframe: "10/2023 - 05/2024",
     bullets: [
-      "Built digital trade and climate smart agriculture platforms in a Microsoft partnered ecosystem",
-      "Delivered enterprise grade authentication and workflow integrations across multi stakeholder systems",
+      "Built digital trade and climate-smart agriculture platforms within a Microsoft-partnered innovation ecosystem.",
+      "Delivered enterprise-grade authentication and workflow integrations across multi-stakeholder systems.",
     ],
   },
 ]
 
 const skills = [
   {
-    title: "AI Orchestration and Agents",
+    title: "Cognitive Architecture & Agentic Systems",
     items: [
-      "XState",
-      "Apache Burr",
-      "Model Context Protocol",
-      "Agentic RAG",
-      "Tool use and function calling",
-      "AI primitives",
+      "State-Driven Logic: XState (Finite State Machines), Apache Burr, Model Context Protocol",
+      "Orchestration Patterns: Agentic RAG, Multi-Agent Coordination, Tool-use, 12-Factor Agents",
+      "Reliability Layer: Effect-TS (Errors-as-Data), Circuit Breakers, Event-Driven Architectures",
     ],
   },
   {
-    title: "Evals and Governance",
+    title: "Evals & System Governance",
     items: [
-      "Bespoke MiniCheck",
-      "RAGAS",
-      "DeepEval",
-      "Curator",
-      "Evals as code",
-      "LLM as a judge",
+      "Diagnostic Frameworks: DeepEval, RAGAS, NLI (Natural Language Inference)",
+      "Safety & Alignment: LLM-as-a-Judge, Automated Hallucination Detection, Evals-as-Code",
+      "Synthetic Data & Robustness: Curator for edge-case discovery, adversarial stress testing, and dataset augmentation",
     ],
   },
   {
-    title: "Retrieval and Search",
+    title: "Retrieval Diagnostics & Information Retrieval",
     items: [
-      "Hybrid search",
-      "Rerankers",
-      "Atomic fact extraction",
-      "Pinecone",
-      "Qdrant",
-      "pgvector",
+      "Hybrid Search: Vector + BM25, Rerankers, Atomic Fact Extraction",
+      "Data Stores: Qdrant, Pinecone, pgvector (PostgreSQL), DuckDB",
+      "Search Optimization: Causal reasoning for retrieval drift, query expansion, and semantic caching",
     ],
   },
   {
-    title: "Inference and Reliability",
+    title: "Inference Infrastructure & Performance",
     items: [
-      "vLLM",
-      "Ollama",
-      "Nvidia Triton",
-      "Quantization",
-      "Docker and Kubernetes",
-      "Event driven architectures",
+      "Vitals & Optimization: PagedAttention, Quantization (GGUF, AWQ, EXL2)",
+      "Resilient Compute: Docker, Kubernetes (K8s), IaC, Cloudflare Workers (Edge Inference), Ollama",
     ],
   },
   {
-    title: "Languages",
-    items: ["TypeScript", "Python", "Go", "PostgreSQL"],
+    title: "Browser Automation & Web Agents",
+    items: [
+      "Chrome DevTools Protocol (CDP), Playwright, Stagehand",
+      "Agent action recording, session replay, DOM change detection",
+      "Fault-tolerant navigation in auth flows and dynamic interfaces",
+    ],
+  },
+  {
+    title: "Product & Frontend",
+    items: [
+      "React & Tanstack Ecosystem",
+      "PWAs, offline-first architecture",
+      "Agent UI, HITL dashboard design",
+    ],
   },
 ]
 
@@ -184,16 +193,16 @@ export default function ResumePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Resume</p>
               <h1 className="mt-4 font-display text-4xl text-slate-900">Wilson Gichuhi</h1>
-              <p className="mt-2 text-lg text-slate-700">AI Systems Engineer</p>
+              <p className="mt-2 text-lg text-slate-700">AI Systems & Reliability Engineer</p>
               <p className="mt-4 text-sm text-slate-700">
-                I build deterministic agentic orchestration and evaluation infrastructure. My work turns model output into reliable workflows using finite
-                state machines, grounded retrieval, and rigorous eval harnesses.
+                I architect the control layer between model outputs and real business workflows, replacing nondeterministic agent loops with explicit
+                orchestration, auditable state, and evaluation infrastructure that catches failures before they reach users.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">Deterministic orchestration</Badge>
-                <Badge variant="secondary" className="text-xs">Evaluation systems</Badge>
-                <Badge variant="secondary" className="text-xs">Hybrid retrieval</Badge>
-                <Badge variant="secondary" className="text-xs">Inference reliability</Badge>
+                <Badge variant="secondary" className="text-xs">State-driven orchestration</Badge>
+                <Badge variant="secondary" className="text-xs">NLI-backed evals</Badge>
+                <Badge variant="secondary" className="text-xs">Retrieval diagnostics</Badge>
+                <Badge variant="secondary" className="text-xs">Production reliability</Badge>
               </div>
             </div>
 
@@ -309,9 +318,9 @@ export default function ResumePage() {
         <section className="mt-12">
           <h2 className="font-display text-2xl text-slate-900">Education</h2>
           <div className="mt-4 rounded-2xl border border-slate-900/10 bg-white/85 p-6 shadow-soft">
-            <p className="text-base font-semibold text-slate-900">BSc Computer Technology</p>
-            <p className="text-sm text-slate-600">Jomo Kenyatta University of Agriculture and Technology</p>
-            <p className="mt-2 text-sm text-slate-700">2018 to 2023</p>
+            <p className="text-base font-semibold text-slate-900">BSc. Computer Technology</p>
+            <p className="text-sm text-slate-600">JKUAT University</p>
+            <p className="mt-2 text-sm text-slate-700">2018 - 2023</p>
           </div>
         </section>
       </div>

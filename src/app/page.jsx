@@ -28,65 +28,65 @@ import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 
 const metrics = [
   {
-    value: "100%",
-    label: "Execution traceability for tax compliant workflows",
-  },
-  {
-    value: "99%",
-    label: "Malformed outputs removed with schema guards",
-  },
-  {
     value: "40%",
-    label: "SKU matching precision gain on noisy text",
+    label: "Promotional wastage reduced with profit-aware promo tracking",
   },
   {
-    value: "Sub second",
-    label: "Inference gateway latency with semantic caching",
+    value: "70%",
+    label: "Manual CRM data entry cut with voice-to-CRM logging",
+  },
+  {
+    value: "End-to-end",
+    label: "Evaluation ownership from environment setup to oracle verification",
+  },
+  {
+    value: "Live context",
+    label: "MCP runtime integrations over downstream commerce and compliance systems",
   },
 ]
 
 const focusAreas = [
   {
-    title: "Deterministic Agentic Orchestration",
+    title: "State-Driven Orchestration",
     description:
-      "Finite state machines and strict state transitions that turn model output into audit ready workflows.",
+      "Explicit state machines and durable execution that turn AI behavior into traceable business workflows.",
     bullets: [
-      "XState and Apache Burr orchestration",
-      "State immutability and full execution traces",
-      "Tool use grounded by explicit schemas",
+      "XState, Apache Burr, and Model Context Protocol",
+      "Agentic RAG, multi-agent coordination, and tool use",
+      "Effect-TS, circuit breakers, and event-driven recovery",
     ],
     icon: Workflow,
   },
   {
-    title: "Evaluation and Governance",
+    title: "Evals and System Governance",
     description:
-      "Evals as code with adversarial testing, reliability scoring, and production safeguards.",
+      "Reliability infrastructure that catches failures before model output reaches users.",
     bullets: [
-      "Bespoke MiniCheck and NLI based reliability",
-      "DeepEval and Curator for automated testing",
-      "LLM as a judge with oracle verification",
+      "DeepEval, RAGAS, and NLI-based verification",
+      "LLM-as-a-Judge with hallucination detection",
+      "Curator for synthetic edge cases and adversarial stress tests",
     ],
     icon: ShieldCheck,
   },
   {
-    title: "Retrieval and Search",
+    title: "Retrieval Diagnostics",
     description:
-      "Hybrid retrieval pipelines that stay precise under noisy, real world inputs.",
+      "Hybrid retrieval pipelines that stay useful under noisy, real-world inputs.",
     bullets: [
-      "Vector plus BM25 hybrid search",
-      "Rerankers tuned for domain precision",
-      "Atomic fact extraction for grounding",
+      "Vector + BM25 hybrid search and rerankers",
+      "Qdrant, Pinecone, pgvector, and DuckDB",
+      "Query expansion, semantic caching, and retrieval drift analysis",
     ],
     icon: Search,
   },
   {
-    title: "Inference Infrastructure",
+    title: "Inference and Web Agents",
     description:
-      "Production grade model serving with cost controls and deterministic latency.",
+      "Runtime systems that balance performance, resilience, and real browser interaction.",
     bullets: [
-      "vLLM, Ollama, Nvidia Triton",
-      "Quantization with GGUF, EXL2, AWQ",
-      "Modal gateways with cold start tuning",
+      "PagedAttention and quantization with GGUF, AWQ, EXL2",
+      "Docker, Kubernetes, Cloudflare Workers, and Ollama",
+      "Playwright, CDP, and Stagehand for resilient browser automation",
     ],
     icon: Cpu,
   },
@@ -94,57 +94,71 @@ const focusAreas = [
 
 const caseStudies = [
   {
-    title: "Promco",
-    role: "Builder and AI Systems Engineer, Founder",
-    timeframe: "2026 to Present",
+    title: "Bespoke Labs",
+    role: "AI Evaluation Engineer (Contractor)",
+    timeframe: "03/2026",
     summary:
-      "WhatsApp to eTIMS order processing engine built for deterministic execution and audit safe traces.",
+      "Evaluation task authorship and claim-level grounding for open reasoning and agentic coding benchmarks.",
     highlights: [
-      "Replaced nondeterministic loops with finite state machines using XState and Apache Burr",
-      "Sub second inference gateway on Modal with semantic caching for Bespoke MiniCheck",
-      "Effect TS middleware with schema validation and circuit breakers to remove 99 percent malformed outputs",
-      "Hybrid search with Voyage rerankers improving SKU matching precision by 40 percent",
+      "Contributed task authorship to OpenThoughts, Bespoke Labs' open reasoning dataset initiative",
+      "Designed Harbor-format Terminal Bench style tasks covering concurrency bugs, semaphore leaks, and write-ordering failures",
+      "Owned the pipeline from environment setup to oracle verification across TypeScript and healthcare scenarios",
+      "Applied Bespoke-MiniCheck with NLI-based verification to improve automated eval signal reliability",
     ],
-    tags: ["Agentic Orchestration", "Inference", "RAG", "MCP"],
+    tags: ["OpenThoughts", "Harbor", "Bespoke-MiniCheck", "NLI"],
+  },
+  {
+    title: "Promco",
+    role: "Builder & AI Systems Engineer, Founder",
+    timeframe: "03/2026",
+    summary:
+      "Order-to-approval system for liquor distributors that turns WhatsApp orders into commercially reviewable drafts.",
+    highlights: [
+      "Designed the orchestration layer with explicit state machines and durable session handling",
+      "Built AI order-processing guardrails with typed tools, schema validation, prompt versioning, and failure tracing",
+      "Developed product resolution for noisy colloquial orders using retrieval, ranking, and structured validation",
+      "Built MCP-based integrations so models operate against live commerce and compliance context",
+    ],
+    tags: ["State Machines", "Compliance", "Retrieval", "MCP"],
   },
   {
     title: "AfterQuery",
-    role: "AI Training and Model Evaluation Engineer",
-    timeframe: "Aug 2025 to Mar 25, 2026",
+    role: "AI Training & Model Evaluation Engineer",
+    timeframe: "08/2025",
     summary:
-      "Benchmarking frontier models with realistic eval harnesses and red team pipelines.",
+      "Frontier model benchmarking and evaluation environments for security, infra, and healthcare workflows.",
     highlights: [
-      "Evaluated frontier models for logic correctness and security",
-      "Built Project Anvil style environments with gold patch verification",
-      "Terminal Bench v2 tasks covering concurrency, security, and infra debugging",
-      "Automated red teaming for model generated system architectures",
+      "Conducted systematic frontier LLM evaluations for logic correctness and security",
+      "Built Project Anvil evaluation environments using base snapshots, gold patches, and automated oracles",
+      "Created Terminal Bench v2 tasks for concurrency bugs, security vulnerabilities, and infra debugging",
+      "Designed stress tests for LLM-driven API design through automated red teaming",
     ],
-    tags: ["Evals", "Benchmarking", "Security"],
+    tags: ["Benchmarking", "Project Anvil", "Terminal Bench", "Security"],
   },
   {
     title: "Alcora",
     role: "Backend Engineer",
-    timeframe: "Feb 2025 to Aug 2025",
+    timeframe: "02/2025 - 09/2025",
     summary:
-      "Headless ERP and FMCG operations platform for multi tenant revenue ops.",
+      "Multi-tenant FMCG backend covering stock, payments, dispatch, and promo intelligence.",
     highlights: [
-      "Real time stock and demand intelligence across distributed actors",
-      "Payment rails with automated debt reconciliation",
-      "Geospatial delivery tracking and dispatch automation",
-      "Promo cost versus incremental gross profit tracking cutting wastage by 40 percent",
+      "Architected Headless ERP with real-time stock and demand intelligence across distributed actors",
+      "Built core payment rails with automated debt reconciliation across brands, distributors, and retailers",
+      "Embedded geospatial intelligence for delivery tracking, route batching, and dispatch automation",
+      "Enabled promo cost versus incremental gross profit tracking, reducing promotional wastage by 40%",
     ],
     tags: ["Fintech", "ERP", "Geospatial"],
   },
   {
     title: "AfyaTelemed",
     role: "Founding Engineer",
-    timeframe: "May 2024 to Jul 2025",
+    timeframe: "05/2024 - 07/2025",
     summary:
-      "HIPAA compliant telemedicine platform spanning triage, consults, pharmacy, and labs.",
+      "HIPAA-compliant telemedicine platform spanning triage, consultations, pharmacy, and labs.",
     highlights: [
-      "Secure video consultations with end to end encryption",
-      "Local and international payment processing",
-      "Stack built with Python, FastAPI, Next.js, WebRTC, AWS",
+      "Architected the platform from scratch across triage, consultations, pharmacy, and lab integration",
+      "Built secure video consultation with E2E encryption and payment processing across local and international gateways",
+      "Stack: Python/FastAPI, Next.js, WebRTC, AWS",
     ],
     tags: ["HealthTech", "WebRTC", "Platform"],
   },
@@ -152,37 +166,43 @@ const caseStudies = [
 
 const timeline = [
   {
-    year: "2026",
-    title: "Builder and AI Systems Engineer",
+    year: "03/2026",
+    title: "AI Evaluation Engineer (Contractor)",
+    company: "Bespoke Labs",
+    detail: "OpenThoughts task authorship, Harbor benchmarks, and NLI-backed grounding.",
+  },
+  {
+    year: "03/2026",
+    title: "Builder & AI Systems Engineer",
     company: "Promco",
-    detail: "Deterministic orchestration and inference systems for tax compliant workflows.",
+    detail: "State-driven order approval workflows with live commerce and compliance context.",
   },
   {
-    year: "Aug 2025 to Mar 25, 2026",
-    title: "AI Training and Model Evaluation Engineer",
+    year: "08/2025",
+    title: "AI Training & Model Evaluation Engineer",
     company: "AfterQuery",
-    detail: "Frontier model benchmarks, eval harnesses, and adversarial testing.",
+    detail: "Frontier LLM benchmarking, agentic coding tasks, and automated oracle pipelines.",
   },
   {
-    year: "Feb 2025 to Aug 2025",
+    year: "02/2025 - 09/2025",
     title: "Backend Engineer",
     company: "Alcora",
     detail: "Headless ERP, payment rails, and FMCG intelligence.",
   },
   {
-    year: "May 2024 to Jul 2025",
+    year: "05/2024 - 07/2025",
     title: "Founding Engineer",
     company: "AfyaTelemed",
     detail: "HIPAA compliant telemedicine and secure video workflows.",
   },
   {
-    year: "2024",
+    year: "04/2024 - 10/2024",
     title: "Software Engineer",
-    company: "McSystems and Medical Inc.",
+    company: "McSystems & Medical Inc.",
     detail: "Voice to CRM logging and offline first marketplace rebuild.",
   },
   {
-    year: "2023 to 2024",
+    year: "10/2023 - 05/2024",
     title: "Fullstack Developer",
     company: "JHUB Innovation Africa",
     detail: "Digital trade platforms and enterprise workflow integrations.",
@@ -191,62 +211,86 @@ const timeline = [
 
 const skillBands = [
   {
-    title: "AI Orchestration and Agents",
+    title: "Cognitive Architecture",
     items: [
       "XState",
       "Apache Burr",
       "Model Context Protocol",
       "Agentic RAG",
-      "Tool use and function calling",
-      "AI primitives",
+      "Multi-agent coordination",
+      "12-Factor Agents",
     ],
   },
   {
-    title: "Evals and Governance",
+    title: "Evals & Governance",
     items: [
-      "Bespoke MiniCheck",
-      "RAGAS",
       "DeepEval",
+      "RAGAS",
+      "NLI",
+      "Bespoke-MiniCheck",
+      "LLM-as-a-Judge",
       "Curator",
-      "Evals as code",
-      "LLM as a judge",
     ],
   },
   {
-    title: "Retrieval and Search",
+    title: "Retrieval Diagnostics",
     items: [
-      "Hybrid search",
+      "Vector + BM25",
       "Rerankers",
       "Atomic fact extraction",
-      "Pinecone",
       "Qdrant",
+      "Pinecone",
       "pgvector",
+      "DuckDB",
     ],
   },
   {
-    title: "Inference and Reliability",
+    title: "Inference & Runtime",
     items: [
-      "vLLM",
+      "PagedAttention",
+      "GGUF/AWQ/EXL2",
+      "Docker",
+      "Kubernetes",
+      "Cloudflare Workers",
       "Ollama",
-      "Nvidia Triton",
-      "Quantization",
-      "Docker and Kubernetes",
-      "Event driven systems",
+    ],
+  },
+  {
+    title: "Browser Automation",
+    items: [
+      "CDP",
+      "Playwright",
+      "Stagehand",
+      "Session replay",
+      "DOM change detection",
+      "Fault-tolerant auth flows",
+    ],
+  },
+  {
+    title: "Product & Frontend",
+    items: [
+      "React",
+      "TanStack",
+      "PWAs",
+      "Offline-first UX",
+      "Agent UI",
+      "HITL dashboards",
     ],
   },
 ]
 
 const marqueeItems = [
-  "Deterministic agents",
-  "Evaluation harnesses",
-  "Grounded retrieval",
-  "Schema validation",
+  "OpenThoughts",
+  "Harbor tasks",
+  "State machines",
+  "NLI verification",
   "Hybrid search",
-  "Inference gateways",
-  "Finite state machines",
-  "Audit ready traces",
+  "MCP runtime services",
+  "DuckDB",
+  "Cloudflare Workers",
+  "Stagehand",
+  "HITL dashboards",
   "Quantization",
-  "Circuit breakers",
 ]
 
 export default function Portfolio() {
@@ -263,14 +307,14 @@ export default function Portfolio() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-900/10 bg-white/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.28em] text-slate-500">
                 <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
-                AI Systems Engineer
+                AI Systems & Reliability Engineer
               </div>
               <h1 className="mt-6 text-balance font-display text-4xl font-semibold text-slate-900 sm:text-5xl md:text-6xl">
                 Wilson Gichuhi
               </h1>
               <p className="mt-6 text-balance text-lg text-slate-700 md:text-xl">
-                I build deterministic agentic systems and evaluation infrastructure that turn model output into reliable business workflows.
-                Finite state machines, grounded retrieval, and rigorous eval harnesses keep production behavior predictable.
+                I architect the control layer between model outputs and real business workflows, turning AI-driven products into reliable production systems.
+                Explicit orchestration, auditable state, and evaluation infrastructure keep failures from reaching users.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild className="rounded-full bg-slate-900 px-6 text-slate-100 hover:bg-slate-800">
@@ -331,29 +375,29 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <h2 className="mt-4 text-balance font-display text-2xl text-slate-900">
-                  Deterministic AI systems with audit ready traces
+                  Reliable AI for high-stakes workflows
                 </h2>
                 <p className="mt-3 text-sm text-slate-700">
-                  I work at the boundary between probabilistic models and strict business requirements, building the guardrails that make AI dependable.
+                  I work best where "mostly works" is still failure, building the guardrails that keep automation auditable, debuggable, and safe to run.
                 </p>
                 <div className="mt-5 space-y-3 text-sm text-slate-700">
                   <div className="flex gap-3">
                     <div className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />
-                    WhatsApp to eTIMS order processing with immutable state transitions
+                    Explicit state machines and durable session handling for order-to-approval workflows
                   </div>
                   <div className="flex gap-3">
                     <div className="mt-2 h-2 w-2 rounded-full bg-sky-500" />
-                    Inference gateways with semantic caching and cold start tuning
+                    NLI-backed eval pipelines with oracle verification for agentic coding tasks
                   </div>
                   <div className="flex gap-3">
                     <div className="mt-2 h-2 w-2 rounded-full bg-amber-500" />
-                    Evaluation harnesses and adversarial testing for frontier models
+                    MCP integrations, retrieval, and structured validation against live business context
                   </div>
                 </div>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   <div className="rounded-xl bg-white/70 p-3 text-xs">
                     <p className="text-slate-500">Core Stack</p>
-                    <p className="mt-1 font-semibold text-slate-900">TypeScript, Python, Go</p>
+                    <p className="mt-1 font-semibold text-slate-900">TypeScript, Python, React</p>
                   </div>
                   <div className="rounded-xl bg-white/70 p-3 text-xs">
                     <p className="text-slate-500">Availability</p>
@@ -638,7 +682,7 @@ export default function Portfolio() {
 
       <footer className="border-t border-slate-900/10 bg-white/80 py-6">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 text-xs text-slate-500">
-          <span>© 2026 Wilson Gichuhi. AI systems with deterministic execution.</span>
+          <span>© 2026 Wilson Gichuhi. AI systems built for production reliability.</span>
           <div className="flex items-center gap-3">
             <a href="mailto:winchygichu@gmail.com" className="inline-flex items-center gap-2">
               <Mail className="h-4 w-4" />
