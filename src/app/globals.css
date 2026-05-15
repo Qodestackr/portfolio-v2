@@ -44,39 +44,40 @@
 }
 
 :root {
-  --radius: 0.85rem;
-  --background: oklch(0.98 0.02 86);
-  --foreground: oklch(0.17 0.02 252);
-  --card: oklch(0.99 0.015 86);
-  --card-foreground: oklch(0.17 0.02 252);
-  --popover: oklch(0.99 0.015 86);
-  --popover-foreground: oklch(0.17 0.02 252);
-  --primary: oklch(0.26 0.08 245);
-  --primary-foreground: oklch(0.98 0.02 86);
-  --secondary: oklch(0.94 0.02 86);
-  --secondary-foreground: oklch(0.21 0.02 252);
-  --muted: oklch(0.95 0.02 86);
-  --muted-foreground: oklch(0.5 0.02 252);
-  --accent: oklch(0.92 0.05 142);
-  --accent-foreground: oklch(0.19 0.02 252);
+  --radius: 0.25rem;
+  --background: oklch(0.98 0.01 95);
+  --foreground: oklch(0.17 0 0);
+  --card: oklch(0.99 0.005 95);
+  --card-foreground: oklch(0.17 0 0);
+  --popover: oklch(0.99 0.005 95);
+  --popover-foreground: oklch(0.17 0 0);
+  --primary: oklch(0.2 0 0);
+  --primary-foreground: oklch(0.98 0.01 95);
+  --secondary: oklch(0.94 0.005 95);
+  --secondary-foreground: oklch(0.2 0 0);
+  --muted: oklch(0.94 0.005 95);
+  --muted-foreground: oklch(0.48 0 0);
+  --accent: oklch(0.92 0.005 95);
+  --accent-foreground: oklch(0.2 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.01 86);
-  --input: oklch(0.9 0.01 86);
-  --ring: oklch(0.45 0.06 245);
+  --border: oklch(0.84 0.005 95);
+  --input: oklch(0.88 0.005 95);
+  --ring: oklch(0.38 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0.01 86);
-  --sidebar-foreground: oklch(0.17 0.02 252);
-  --sidebar-primary: oklch(0.26 0.08 245);
-  --sidebar-primary-foreground: oklch(0.98 0.02 86);
-  --sidebar-accent: oklch(0.95 0.02 86);
-  --sidebar-accent-foreground: oklch(0.21 0.02 252);
-  --sidebar-border: oklch(0.88 0.01 86);
-  --sidebar-ring: oklch(0.45 0.06 245);
-  --font-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  --sidebar: oklch(0.98 0.01 95);
+  --sidebar-foreground: oklch(0.17 0 0);
+  --sidebar-primary: oklch(0.2 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0.01 95);
+  --sidebar-accent: oklch(0.94 0.005 95);
+  --sidebar-accent-foreground: oklch(0.2 0 0);
+  --sidebar-border: oklch(0.84 0.005 95);
+  --sidebar-ring: oklch(0.38 0 0);
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 .dark {
@@ -124,8 +125,11 @@
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
   }
+  a {
+    text-underline-offset: 4px;
+  }
   ::selection {
-    background: rgba(14, 116, 144, 0.2);
+    background: rgba(23, 23, 23, 0.12);
   }
 }
 
@@ -135,96 +139,5 @@
   }
   .text-balance {
     text-wrap: balance;
-  }
-  .bg-hero {
-    background-image:
-      radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.18), transparent 55%),
-      radial-gradient(circle at 85% 10%, rgba(14, 116, 144, 0.18), transparent 48%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 242, 233, 0.95));
-  }
-  .bg-soft-grid {
-    background-image:
-      linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
-    background-size: 32px 32px;
-  }
-  .bg-sand {
-    background: linear-gradient(135deg, rgba(250, 247, 241, 0.98), rgba(243, 236, 225, 0.95));
-  }
-  .glass-panel {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(18px);
-  }
-  .shadow-soft {
-    box-shadow: 0 24px 60px -40px rgba(15, 23, 42, 0.35);
-  }
-  .animate-float {
-    animation: float 8s ease-in-out infinite;
-  }
-  .animate-float-slow {
-    animation: float 12s ease-in-out infinite;
-  }
-  .animate-marquee {
-    animation: marquee 24s linear infinite;
-  }
-  .animate-marquee-reverse {
-    animation: marquee 28s linear infinite reverse;
-  }
-  .animate-shimmer {
-    animation: shimmer 10s ease infinite;
-  }
-  .animate-scan {
-    animation: scan 8s linear infinite;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes scan {
-  0% {
-    transform: translateY(-30%);
-  }
-  100% {
-    transform: translateY(130%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-float,
-  .animate-float-slow,
-  .animate-marquee,
-  .animate-marquee-reverse,
-  .animate-shimmer,
-  .animate-scan {
-    animation: none;
   }
 }
