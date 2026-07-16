@@ -1,0 +1,151 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import config from "@/config";
+
+const { socials } = config;
+
+const locale = Astro.currentLocale ?? config.site.lang;
+
+const projects = [
+  {
+    title: "CareWeave",
+    subtitle: "AI-Native Healthcare Coordination Platform",
+    detail:
+      "An AI-native platform that transforms fragmented, unstructured healthcare documents (images, referrals, scanned PDFs) into a grounded knowledge graph using vector embeddings and relationship-native reasoning. Automates provider-payer loops with low-latency voice agents and human-in-the-loop validation, building institutional memory that reduces referral delays and claim denials.",
+  },
+  {
+    title: "Taji",
+    subtitle: "Real-Time AI Product Demo Agent",
+    detail:
+      "A 24/7 AI agent that joins video calls to deliver multilingual, interactive product demos. Drops into any SaaS product to navigate it via VLM-based agentic automation, qualifying leads and booking follow-ups directly in your CRM and calendar. Built on LiveKit, Deepgram, and Cartesia (<700ms perceived latency).",
+  },
+  {
+    title: "CVCS",
+    subtitle: "AI Cognition Version Control System",
+    detail:
+      "Version control for enterprise AI cognition and context. CVCS tracks decisions, corrections, and contexts to make agent behavior explicit, versioned, and portable—retaining organizational knowledge while keeping agent runtimes interchangeable.",
+  },
+];
+
+const work = [
+  {
+    company: "Promco",
+    role: "Builder and AI Systems Engineer",
+    period: "2026",
+    detail:
+      "Building an order-to-approval system for liquor distributors. WhatsApp orders become reviewable drafts before stock, margin, promo, tax, and compliance decisions are committed.",
+  },
+  {
+    company: "Bespoke Labs",
+    role: "AI Evaluation Engineer",
+    period: "2026",
+    detail:
+      "Authored Harbor and Terminal Bench style evaluation tasks for agentic coding systems, with oracle verification and claim-level grounding using NLI-based checks.",
+  },
+  {
+    company: "AfterQuery",
+    role: "AI Training and Model Evaluation Engineer",
+    period: "2025",
+    detail:
+      "Built evaluation environments for frontier models across infrastructure, security, and healthcare workflows.",
+  },
+  {
+    company: "Alcora",
+    role: "Backend Engineer",
+    period: "2025",
+    detail:
+      "Worked on a multi-tenant FMCG operations backend covering stock intelligence, payments, dispatch, and promo tracking.",
+  },
+  {
+    company: "AfyaTelemed",
+    role: "Founding Engineer",
+    period: "2024 - 2025",
+    detail:
+      "Architected a secure telemedicine platform across triage, pharmacy, and lab integration using WebRTC and local payment gateways.",
+  },
+  {
+    company: "McSystems & Medical Inc.",
+    role: "Software Engineer",
+    period: "2024",
+    detail:
+      "Built a CRM voice-logging assistant and rebuilt a legacy PHP marketplace into an offline-first Next.js application.",
+  },
+];
+---
+
+<Layout>
+  <Header />
+  <main
+    id="main-content"
+    data-layout="index"
+    data-home-path={getRelativeLocaleUrl(locale, "")}
+    class="app-layout"
+  >
+    <section id="hero" class="border-border border-b pt-6 pb-4">
+      <p class="text-sm font-medium text-muted-foreground">Wilson Gichuhi, Systems Engineer</p>
+      <h1 class="my-3 inline-block text-xl font-normal sm:my-8 sm:text-4xl leading-tight">
+        I build production systems that bring AI, integrations, and infrastructure into business workflows.
+      </h1>
+      <p class="mt-2 text-lg leading-relaxed text-foreground/90">
+        My background is in full-stack engineering, and today I build the systems that make AI useful in production. I design integrations, document intelligence pipelines, knowledge graphs, retrieval, orchestration, and evaluation that connect models to real business operations. The goal is simple: build software that is reliable enough for people to trust, not just impressive enough to demo.
+      </p>
+      {
+        socials.length > 0 && (
+          <div class="mt-4 flex max-sm:flex-col sm:items-center">
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0 text-muted-foreground">
+              Social Links:
+            </div>
+            <Socials />
+          </div>
+        )
+      }
+    </section>
+
+    <section id="projects" class="border-border border-b pt-12 pb-8">
+      <h2 class="text-2xl font-semibold tracking-wide text-foreground">Projects</h2>
+      <div class="mt-6 space-y-8">
+        {projects.map((proj) => (
+          <article class="space-y-2">
+            <h3 class="font-medium text-lg text-foreground">
+              {proj.title} <span class="text-accent">: {proj.subtitle}</span>
+            </h3>
+            <p class="leading-relaxed text-muted-foreground">{proj.detail}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="work" class="pt-12 pb-8">
+      <h2 class="text-2xl font-semibold tracking-wide text-foreground">Work</h2>
+      <div class="mt-6 space-y-6">
+        {work.map((item) => (
+          <article class="grid gap-2 sm:grid-cols-[9rem_1fr]">
+            <p class="text-sm text-muted-foreground">{item.period}</p>
+            <div>
+              <h3 class="font-medium text-lg text-foreground">
+                {item.role}, <span class="text-accent">{item.company}</span>
+              </h3>
+              <p class="mt-2 leading-relaxed text-muted-foreground">{item.detail}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset;
+    const baseRoot = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+    if (indexLayout?.layout) {
+      sessionStorage.setItem("backUrl", indexLayout.homePath ?? baseRoot);
+    }
+  });
+</script>
