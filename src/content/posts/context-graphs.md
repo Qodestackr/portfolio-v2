@@ -1,13 +1,13 @@
 ---
 author: Wilson Gichuhi
-title: "Context Graphs: Context is the bottleneck"
+title: "Context Graphs: The Missing Layer for Enterprise AI (Part 1)"
 description: >
   Enterprise systems record operational facts, but AI agents increasingly
   need the reasoning behind those facts. A look at context graphs,
   decision traces, and why capturing judgment at write time may become a
   foundational layer for enterprise AI.
 pubDatetime: 2026-07-21T13:20:00Z
-slug: "decisions-are-data-too"
+slug: "context-graphs-part-1"
 draft: false
 featured: true
 tags:
@@ -17,7 +17,7 @@ tags:
   - architecture
 ---
 
-# Context graphs: Context is the bottleneck
+# Context Graphs: The Missing Layer for Enterprise AI (Part 1)
 
 Agents can read data and take actions. What they struggle with is understanding *why* a decision exists.
 
