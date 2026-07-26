@@ -1,6 +1,6 @@
 ---
 author: Wilson Gichuhi
-title: The Sentence Was Never the Product
+title: Outcomes matter more than words
 description: >
   A mental model for what AI systems actually need once they stop
   answering questions and start acting. Observation evolves through
