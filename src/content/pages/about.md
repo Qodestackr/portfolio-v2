@@ -10,7 +10,7 @@ My background is in full-stack engineering, and today I build the systems that m
 ## Areas of Focus
 
 - **Orchestration & State Machines:** Designing deterministic execution flows around probabilistic model behaviors using explicit state machines and event logs.
-- **Evaluation & Diagnostics:** Authoring robust evaluation benchmarks (e.g. Harbor and Terminal Bench style tasks) and factual grounding pipelines (using NLI-based verification like MiniCheck).
+- **Evaluation & Diagnostics:** Authoring robust evaluation benchmarks (e.g. Harbor and Terminal Bench style tasks) and factual grounding pipelines.
 - **Backend & Event-Driven Systems:** Architecting highly available systems, telemedicine platforms, headless ERPs, and local/international payment integrations.
 
 ## Connect with Me
