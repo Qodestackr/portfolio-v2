@@ -10,6 +10,20 @@ const locale = Astro.currentLocale ?? config.site.lang;
 
 const experience = [
   {
+  role: "Co-founding Engineer",
+  company: "CareWeave",
+  period: "Sept 2026 - Present",
+  bullets: [
+    "Co-founded a provider-side revenue integrity system that helps hospital billing and insurance teams resolve financing exceptions across HMIS platforms, payer workflows, documents, and operational follow-up.",
+
+    "Designed an event-sourced revenue-matter model and deterministic evaluation pipeline that preserves provenance across source observations, payer requirements, evidence, exceptions, actions, and outcomes.",
+
+    "Built Billie, a governed human-in-the-loop agent layer that uses contextual evidence to prepare next actions while enforcing version-bound proposals, stale-state detection, explicit review, and operational guardrails.",
+
+    "Built signed ingestion, normalization, durable queue and outbox processing, tenant-scoped APIs, and workflow-capture tooling for hospital systems where direct API integration is unavailable."
+  ],
+},
+  {
     role: "Builder and AI Systems Engineer",
     company: "Promco",
     period: "03/2026",
@@ -62,7 +76,7 @@ const experience = [
 
 const projects = [
   {
-    title: "CareWeave",
+    title: "Splice",
     subtitle: "AI-Native Healthcare Coordination Platform",
     detail:
       "An AI-native platform that transforms fragmented, unstructured healthcare documents (images, referrals, scanned PDFs) into a grounded knowledge graph using vector embeddings and relationship-native reasoning. Automates provider-payer loops with low-latency voice agents and human-in-the-loop validation, building institutional memory that reduces referral delays and claim denials.",
@@ -70,7 +84,7 @@ const projects = [
   },
   {
     title: "Taji",
-    subtitle: "Real-Time AI Product Demo Agent",
+    subtitle: "Real-Time AI SDR",
     detail:
       "A 24/7 AI agent that joins video calls to deliver multilingual, interactive product demos. Drops into any SaaS product to navigate it via VLM-based agentic automation, qualifying leads and booking follow-ups directly in your CRM and calendar. Built on LiveKit and Cartesia",
     techStack: "Python, FastAPI, Effect-TS, LiveKit, Cartesia, VLM-based Agentic Automation",
